@@ -1,0 +1,273 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+$window:100%;
+$f:#fff; //变量白色
+$fontsize:14px;
+//头部
+.heard {
+    width: $window;
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+    //头部上面的logo
+    .logo {
+        width: 1200px;
+        height: 130px;
+        margin: 0 auto;
+        .left {
+            width: 172px;
+            height: 31px;
+            float: left;
+            margin-top: 62px;
+            vertical-align: middle;
+            display: flex;
+            justify-content: space-between;
+        }
+        //中文
+        .zh {
+            width: 80px;
+            height: 31px;
+            border-right: 1px solid #ccc;
+            h4 {
+                width: 40px;
+                height: 28px;
+                line-height: 28px;
+                font-weight: normal;
+                font-size: $fontsize;
+                justify-content: space-between;
+                padding-left: 24px;
+                .iconfont {
+                    font-size: 12px;
+                }
+            }
+        }
+        //人民币
+        .rmb {
+            width: 80px;
+            height: 31px;
+            h4 {
+                width: 40px;
+                height: 28px;
+                line-height: 28px;
+                font-weight: normal;
+                padding-left: 9px;
+                font-size: $fontsize;
+                font-family: 'INTERVOGUE-REG' 'Microsoft YaHei';
+            }
+        }
+    }
+    //中间的logo
+    img {
+        display: inline-block;
+        // margin: 0 auto;
+        text-align: center;
+        padding-top: 29px;
+        position: absolute;
+        left: 616px;
+    }
+    //右边
+    .right {
+        width: 156.56px;
+        height: 28px;
+        float: right;
+        margin-top: 62px;
+        display: flex;
+        justify-content: space-between;
+        .registers {
+            width: 63px;
+            height: 28px;
+            float: right;
+            line-height: 22px;
+            border-right: 1px solid #ccc;
+            a {
+                width: 63px;
+                height: 28px;
+                line-height: 28px;
+                text-decoration: none;
+                color: #000;
+                font-size: 12px;
+                padding-left: 13px;
+            }
+        }
+        .register {
+            width: 63px;
+            height: 28px;
+            float: right;
+            line-height: 22px;
+            border-right: 1px solid #ccc;
+            a {
+                width: 63px;
+                height: 28px;
+                line-height: 28px;
+                text-decoration: none;
+                color: #000;
+                font-size: 12px;
+                padding-left: 13px;
+            }
+        }
+        .iconfont {
+            height: 28px;
+            line-height: 28px;
+            font-size: 20px;
+        }
+    }
+} //头部右边的
+.nav_top {
+    width: $window;
+    height: 50px;
+    background: #000;
+    .List {
+        width: 1200px;
+        margin: 0 auto;
+        background: #000;
+        color: gold;
+        display: flex;
+        justify-content: flex-start;
+        list-style: none;
+        position: relative;
+        li {
+            width: 60px;
+            height: 50px;
+            line-height: 50px;
+            font-size: $fontsize;
+            padding: 0 7px;
+            float: left;
+        }
+        .search {
+            position: absolute;
+            right: 0;
+        }
+    }
+}
+
+//宣传图
+.publicity {
+    width: 1200px;
+    height: 980px;
+    margin: 0 auto;
+    padding-top: 20px;
+    #left {
+        width: 530px;
+        height: 900px;
+        display: inline-block;
+        position: relative;
+        img {
+            width: 530px;
+        }
+        #bottom_img {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+    }
+    #right_huan {
+        width: 650px;
+        height: 980px;
+        float: right;
+        position: relative;
+        .bg_mask {
+            position: absolute;
+            right: 0;
+            top: 0px;
+            z-index: -1;
+        }
+        .right_img {
+            z-index: 1;
+            float: left;
+        }
+        #video_play {
+            padding-top: 20px;
+            width: 650px;
+            height: 550px;
+        }
+    }
+}
+
+//列表页
+.nav {
+    width: 1200px;
+    height: 565px;
+    margin: 54px auto 42px;
+    // 小logo，用的背景图
+    .logo_top {
+        width: 100%;
+        height: 38px;
+        background: url(http://mpic.secooimg.com/images/2018/11/07/editor-pick.png) no-repeat center/266px 38px, url(http://mpic.secooimg.com/images/2018/11/07/title-line.png) no-repeat bottom;
+        margin-bottom: 40px;
+    }
+    // 这里是ul
+    .list {
+        width: 1200px;
+        height: 400px;
+        li {
+            width: 232px;
+            height: 400px;
+            list-style: none;
+            background-color: rgba(0, 0, 0, 0.1);
+            float: left;
+            margin-right: 10px;
+        }
+        .top_img {
+            width: 232px;
+            height: 232px;
+            // background-color: rgba(0, 0, 0, 0.1);
+            // opacity: 0.3;
+            img {
+                width: 100%;
+                height: 100%;
+                filter: brightness(95%); //这是是线性乘法
+                // filter: contrast(100%);这个是对比度
+            }
+        }
+        .li {
+            // width: 232px;
+            // height: 145.2px;
+            padding: 34px 27px 0;
+            background: palegreen;
+        }
+    }
+    .logo_bottom {
+        width: $window;
+        height: 57px;
+        margin-top: 30px;
+        background: peachpuff;
+    }
+}
+
+//宣传图
+.img {
+    width: $window;
+    height: 630px;
+    background: peru;
+}
+
+//二维码
+.store_code {
+    width: $window;
+    height: 300px;
+    background: orange;
+}
+
+//美妆魔法
+.plate-entry_ncontainer_clearfix {
+    width: $window;
+    height: 600px;
+    background: lightcoral;
+}
+
+//寺库网中国
+.secoo {
+    width: $window;
+    height: 724px;
+    background: #ffb81c;
+}
+
+//底部
+.base {
+    width: $window;
+    height: 565px;
+    background: #ffb81c;
+}

@@ -1,0 +1,44 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "184542",
+      "name": "微博",
+      "font_class": "weibo",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "3776242",
+      "name": "放大镜",
+      "font_class": "fangdajing",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "12147498",
+      "name": "星星-线",
+      "font_class": "xing",
+      "unicode": "e502",
+      "unicode_decimal": 58626
+    },
+    {
+      "icon_id": "13664928",
+      "name": "向下 三角形",
+      "font_class": "xiangxiasanjiaoxing",
+      "unicode": "e6ea",
+      "unicode_decimal": 59114
+    },
+    {
+      "icon_id": "15476508",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "eb59",
+      "unicode_decimal": 60249
+    }
+  ]
+}
