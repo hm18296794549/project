@@ -359,34 +359,126 @@ footer {
     width: $window;
     height: 565px;
     background: #ffb81c;
+    // 左边样式
     .base {
         width: 1200px;
         height: 277.8px;
         margin: 0 auto;
         overflow: hidden;
         .serveleft {
-            width: 253px;
+            width: 325px;
             float: left;
             list-style: none;
             height: 277.8px;
             margin-top: 20px;
-            background: orangered;
+            // background: orangered;
+            h4 {
+                width: 325px;
+                height: 20.8px;
+                font-weight: normal
+            }
+            p {
+                width: 325px;
+                height: 19.2px;
+                margin: 12px 0;
+                a {
+                    width: 159.5px;
+                    display: inline-block;
+                    text-decoration: none;
+                    color: #000;
+                }
+            }
         }
+        // 中间样式
         .mediacenter {
             width: 550px;
             height: 277.8px;
             list-style: none;
             float: left;
             margin-top: 20px;
-            background: palegoldenrod;
+            h4 {
+                width: 550px;
+                height: 20.8px;
+                font-weight: normal;
+                text-align: center;
+            }
+            .promotion {
+                width: 550px;
+                height: 240px;
+                background: url(http://mpic.secooimg.com/images/2018/11/07/footer-logo.png) no-repeat 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                span {
+                    margin: 0 106px;
+                }
+            }
         }
+        // 右边
         .APPright {
             width: 78.84px;
             height: 145.8px;
             list-style: none;
             float: left;
             margin-top: 20px;
-            background: paleturquoise;
+            margin: 0 0 0 207px;
+            h4 {
+                font-weight: normal;
+                margin: 0 0 18px 0;
+            }
+            p {
+                margin: 0 0 10px 0;
+            }
         }
     }
+    .certificate {
+        width: 1200px;
+        height: 120.63px;
+        margin: 0 auto;
+        margin-top: 40px;
+        p {
+            height: 21.43px;
+            margin-top: 17.5px;
+            a {
+                height: 21.43px;
+                text-decoration: none;
+                color: #000;
+                font-size: 14px;
+                line-height: 21.43px;
+                img {
+                    margin-top: 3px;
+                }
+            }
+            span {
+                font-size: 14px;
+                padding-left: 25px;
+            }
+            .public {
+                width: 108px;
+                height: 40px;
+                display: inline-block;
+            }
+        }
+    }
+    .bottom_p {
+        width: $window;
+        height: 20px;
+        margin-top: 40px;
+        a {
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+            color: #939393;
+        }
+    }
+}
+
+.immobilization {
+    width: 120px;
+    height: 164px;
+    background: powderblue;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 100;
 }

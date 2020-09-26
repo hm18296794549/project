@@ -424,12 +424,30 @@ footer .base {
 }
 
 footer .base .serveleft {
-  width: 253px;
+  width: 325px;
   float: left;
   list-style: none;
   height: 277.8px;
   margin-top: 20px;
-  background: orangered;
+}
+
+footer .base .serveleft h4 {
+  width: 325px;
+  height: 20.8px;
+  font-weight: normal;
+}
+
+footer .base .serveleft p {
+  width: 325px;
+  height: 19.2px;
+  margin: 12px 0;
+}
+
+footer .base .serveleft p a {
+  width: 159.5px;
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
 }
 
 footer .base .mediacenter {
@@ -438,7 +456,32 @@ footer .base .mediacenter {
   list-style: none;
   float: left;
   margin-top: 20px;
-  background: palegoldenrod;
+}
+
+footer .base .mediacenter h4 {
+  width: 550px;
+  height: 20.8px;
+  font-weight: normal;
+  text-align: center;
+}
+
+footer .base .mediacenter .promotion {
+  width: 550px;
+  height: 240px;
+  background: url(http://mpic.secooimg.com/images/2018/11/07/footer-logo.png) no-repeat 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .base .mediacenter .promotion span {
+  margin: 0 106px;
 }
 
 footer .base .APPright {
@@ -447,5 +490,76 @@ footer .base .APPright {
   list-style: none;
   float: left;
   margin-top: 20px;
-  background: paleturquoise;
+  margin: 0 0 0 207px;
+}
+
+footer .base .APPright h4 {
+  font-weight: normal;
+  margin: 0 0 18px 0;
+}
+
+footer .base .APPright p {
+  margin: 0 0 10px 0;
+}
+
+footer .certificate {
+  width: 1200px;
+  height: 120.63px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+footer .certificate p {
+  height: 21.43px;
+  margin-top: 17.5px;
+}
+
+footer .certificate p a {
+  height: 21.43px;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  line-height: 21.43px;
+}
+
+footer .certificate p a img {
+  margin-top: 3px;
+}
+
+footer .certificate p span {
+  font-size: 14px;
+  padding-left: 25px;
+}
+
+footer .certificate p .public {
+  width: 108px;
+  height: 40px;
+  display: inline-block;
+}
+
+footer .bottom_p {
+  width: 100%;
+  height: 20px;
+  margin-top: 40px;
+}
+
+footer .bottom_p a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  color: #939393;
+}
+
+.immobilization {
+  width: 120px;
+  height: 164px;
+  background: powderblue;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 100;
 }
