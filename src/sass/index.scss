@@ -218,44 +218,103 @@ $fontsize:14px;
             img {
                 width: 100%;
                 height: 100%;
-                filter: brightness(95%); //这是是线性乘法
+                filter: brightness(90%); //这是是线性乘法
                 // filter: contrast(100%);这个是对比度
             }
         }
         .li {
-            // width: 232px;
-            // height: 145.2px;
             padding: 34px 27px 0;
-            background: palegreen;
+            p {
+                font-size: 14px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                font-family: 'CASLON224STD-BOOKITALIC';
+            }
+            .wire {
+                width: 50px;
+                border: 1px solid #000;
+                margin-bottom: 18px;
+            }
         }
     }
     .logo_bottom {
-        width: $window;
+        width: 1200px;
         height: 57px;
         margin-top: 30px;
-        background: peachpuff;
+        // background: peachpuff;
+        background: url(http://mpic.secooimg.com/images/2018/11/07/editor-pick-logo.png) no-repeat center/128px 57px, url(http://mpic.secooimg.com/images/2018/11/07/bottom-line.png) no-repeat 100%/100%;
+    }
+    p {
+        display: flex;
+        justify-content: center;
+        .icon-zuojiantou {
+            font-size: 33px;
+            font-weight: 900;
+            margin-top: 8px;
+        }
+        .icon-iconfontjiantou5 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-top: 10px;
+        }
     }
 }
 
 //宣传图
 .img {
-    width: $window;
+    width: 1200px;
     height: 630px;
-    background: peru;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 30px;
+    .model {
+        width: 950px;
+        height: 630px;
+        float: left;
+        img {
+            z-index: -1;
+        }
+    }
+    .closet {
+        width: 641px;
+        height: 630px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        img {
+            z-index: 5;
+        }
+    }
 }
 
 //二维码
 .store_code {
-    width: $window;
+    width: 1200px;
     height: 300px;
-    background: orange;
+    margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 //美妆魔法
 .plate-entry_ncontainer_clearfix {
-    width: $window;
-    height: 600px;
-    background: lightcoral;
+    width: 1200px;
+    height: 640px;
+    margin: 0 auto;
+    margin-top: 40px;
+    li {
+        width: 380px;
+        height: 600px;
+        list-style: none;
+        float: left;
+        margin: 0 15px;
+    }
+    .KOL {
+        margin-left: 0;
+    }
+    .paradise {
+        margin-right: 0;
+    }
 }
 
 //寺库网中国
@@ -263,11 +322,71 @@ $fontsize:14px;
     width: $window;
     height: 724px;
     background: #ffb81c;
+    .zh_temple {
+        width: 1200px;
+        height: 664px;
+        margin: 0 auto;
+        overflow: hidden;
+        h4 {
+            margin-top: 51px;
+            margin-bottom: 51px;
+            width: 1200px;
+            height: 109px;
+            display: flex;
+            justify-content: center;
+        }
+        ul {
+            width: 1200px;
+            li {
+                width: 380px;
+                height: 504px;
+                list-style: none;
+                float: left;
+                margin: 0 15px;
+            }
+            .global {
+                margin-left: 0;
+            }
+            .we {
+                margin-right: 0;
+            }
+        }
+    }
 }
 
 //底部
-.base {
+footer {
     width: $window;
     height: 565px;
     background: #ffb81c;
+    .base {
+        width: 1200px;
+        height: 277.8px;
+        margin: 0 auto;
+        overflow: hidden;
+        .serveleft {
+            width: 253px;
+            float: left;
+            list-style: none;
+            height: 277.8px;
+            margin-top: 20px;
+            background: orangered;
+        }
+        .mediacenter {
+            width: 550px;
+            height: 277.8px;
+            list-style: none;
+            float: left;
+            margin-top: 20px;
+            background: palegoldenrod;
+        }
+        .APPright {
+            width: 78.84px;
+            height: 145.8px;
+            list-style: none;
+            float: left;
+            margin-top: 20px;
+            background: paleturquoise;
+        }
+    }
 }

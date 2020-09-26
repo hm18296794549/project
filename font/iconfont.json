@@ -6,39 +6,60 @@
   "description": "",
   "glyphs": [
     {
-      "icon_id": "184542",
-      "name": "微博",
-      "font_class": "weibo",
-      "unicode": "e625",
-      "unicode_decimal": 58917
-    },
-    {
-      "icon_id": "3776242",
-      "name": "放大镜",
-      "font_class": "fangdajing",
-      "unicode": "e60e",
-      "unicode_decimal": 58894
-    },
-    {
-      "icon_id": "12147498",
-      "name": "星星-线",
-      "font_class": "xing",
-      "unicode": "e502",
-      "unicode_decimal": 58626
-    },
-    {
-      "icon_id": "13664928",
-      "name": "向下 三角形",
-      "font_class": "xiangxiasanjiaoxing",
-      "unicode": "e6ea",
-      "unicode_decimal": 59114
-    },
-    {
-      "icon_id": "15476508",
+      "icon_id": "386475",
       "name": "微信",
       "font_class": "weixin",
-      "unicode": "eb59",
-      "unicode_decimal": 60249
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "584251",
+      "name": "右箭头",
+      "font_class": "iconfontjiantou5",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "677569",
+      "name": "放大镜",
+      "font_class": "fangdajing",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "6756291",
+      "name": "微博",
+      "font_class": "weibo",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "7524658",
+      "name": "左箭头",
+      "font_class": "zuojiantou",
+      "unicode": "e771",
+      "unicode_decimal": 59249
+    },
+    {
+      "icon_id": "8288894",
+      "name": "星星",
+      "font_class": "xingxing",
+      "unicode": "e859",
+      "unicode_decimal": 59481
+    },
+    {
+      "icon_id": "10939359",
+      "name": "向下箭头",
+      "font_class": "ico_arrowdown",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "11518212",
+      "name": "icon_左右箭头",
+      "font_class": "icon_zuoyoujiantou",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
     }
   ]
 }

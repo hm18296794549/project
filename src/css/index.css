@@ -253,38 +253,115 @@
 .nav .list .top_img img {
   width: 100%;
   height: 100%;
-  -webkit-filter: brightness(95%);
-          filter: brightness(95%);
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
 }
 
 .nav .list .li {
   padding: 34px 27px 0;
-  background: palegreen;
+}
+
+.nav .list .li p {
+  font-size: 14px;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: 'CASLON224STD-BOOKITALIC';
+}
+
+.nav .list .li .wire {
+  width: 50px;
+  border: 1px solid #000;
+  margin-bottom: 18px;
 }
 
 .nav .logo_bottom {
-  width: 100%;
+  width: 1200px;
   height: 57px;
   margin-top: 30px;
-  background: peachpuff;
+  background: url(http://mpic.secooimg.com/images/2018/11/07/editor-pick-logo.png) no-repeat center/128px 57px, url(http://mpic.secooimg.com/images/2018/11/07/bottom-line.png) no-repeat 100%/100%;
+}
+
+.nav p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav p .icon-zuojiantou {
+  font-size: 33px;
+  font-weight: 900;
+  margin-top: 8px;
+}
+
+.nav p .icon-iconfontjiantou5 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 10px;
 }
 
 .img {
-  width: 100%;
+  width: 1200px;
   height: 630px;
-  background: peru;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.img .model {
+  width: 950px;
+  height: 630px;
+  float: left;
+}
+
+.img .model img {
+  z-index: -1;
+}
+
+.img .closet {
+  width: 641px;
+  height: 630px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.img .closet img {
+  z-index: 5;
 }
 
 .store_code {
-  width: 100%;
+  width: 1200px;
   height: 300px;
-  background: orange;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .plate-entry_ncontainer_clearfix {
-  width: 100%;
+  width: 1200px;
+  height: 640px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.plate-entry_ncontainer_clearfix li {
+  width: 380px;
   height: 600px;
-  background: lightcoral;
+  list-style: none;
+  float: left;
+  margin: 0 15px;
+}
+
+.plate-entry_ncontainer_clearfix .KOL {
+  margin-left: 0;
+}
+
+.plate-entry_ncontainer_clearfix .paradise {
+  margin-right: 0;
 }
 
 .secoo {
@@ -293,8 +370,82 @@
   background: #ffb81c;
 }
 
-.base {
+.secoo .zh_temple {
+  width: 1200px;
+  height: 664px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.secoo .zh_temple h4 {
+  margin-top: 51px;
+  margin-bottom: 51px;
+  width: 1200px;
+  height: 109px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.secoo .zh_temple ul {
+  width: 1200px;
+}
+
+.secoo .zh_temple ul li {
+  width: 380px;
+  height: 504px;
+  list-style: none;
+  float: left;
+  margin: 0 15px;
+}
+
+.secoo .zh_temple ul .global {
+  margin-left: 0;
+}
+
+.secoo .zh_temple ul .we {
+  margin-right: 0;
+}
+
+footer {
   width: 100%;
   height: 565px;
   background: #ffb81c;
+}
+
+footer .base {
+  width: 1200px;
+  height: 277.8px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+footer .base .serveleft {
+  width: 253px;
+  float: left;
+  list-style: none;
+  height: 277.8px;
+  margin-top: 20px;
+  background: orangered;
+}
+
+footer .base .mediacenter {
+  width: 550px;
+  height: 277.8px;
+  list-style: none;
+  float: left;
+  margin-top: 20px;
+  background: palegoldenrod;
+}
+
+footer .base .APPright {
+  width: 78.84px;
+  height: 145.8px;
+  list-style: none;
+  float: left;
+  margin-top: 20px;
+  background: paleturquoise;
 }
