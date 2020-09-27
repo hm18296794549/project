@@ -1,484 +1,696 @@
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
-$window:100%;
-$f:#fff; //变量白色
-$fontsize:14px;
-//头部
-.heard {
-    width: $window;
-    height: 130px;
-    display: flex;
-    justify-content: space-between;
-    //头部上面的logo
-    .logo {
-        width: 1200px;
-        height: 130px;
-        margin: 0 auto;
-        .left {
-            width: 172px;
-            height: 31px;
-            float: left;
-            margin-top: 62px;
-            vertical-align: middle;
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        $window:100%; //宽度100%
+        $f:#fff; //变量白色
+        $fontsize:14px; //字体14px
+        $l:left; //左浮动
+        $r:right; //右浮动
+        $black:#000; //黑色变量
+        $wid:1200px; //1200px的宽度
+        $n:none; //去掉li标签的
+        $normal:normal; //去掉h标签的morning加粗
+        //左浮动函数
+        @mixin float($l) {
+            float: $l;
+        }
+        
+        // 右浮动函数
+        @mixin folat($r) {
+            float: $r;
+        }
+        
+        //去掉a标签的下划线
+        @mixin text-decoration($value) {
+            text-decoration: $value;
+        }
+        
+        //黑色
+        @mixin color($black) {
+            color: $black;
+        }
+        
+        //1200px的宽度居中
+        @mixin width($wid) {
+            width: $wid;
+        }
+        
+        //去掉li标签的默认小黑点
+        @mixin list-style($n) {
+            list-style: $n;
+        }
+        
+        //h标签的默认加粗去掉
+        @mixin font-weight($normal) {
+            font-weight: $normal;
+        }
+        
+        //头部
+        .heard {
+            width: $window;
+            height: 130px;
             display: flex;
             justify-content: space-between;
-        }
-        //中文
-        .zh {
-            width: 80px;
-            height: 31px;
-            border-right: 1px solid #ccc;
-            h4 {
-                width: 40px;
+            //头部上面的logo
+            .logo {
+                @include width($wid);
+                height: 130px;
+                margin: 0 auto;
+                .left {
+                    width: 172px;
+                    height: 31px;
+                    @include float($l);
+                    margin-top: 62px;
+                    vertical-align: middle;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                //中文
+                .zh {
+                    width: 80px;
+                    height: 31px;
+                    border-right: 1px solid #ccc;
+                    ;
+                    h4 {
+                        width: 40px;
+                        height: 28px;
+                        line-height: 28px;
+                        @include font-weight($normal);
+                        font-size: $fontsize;
+                        justify-content: space-between;
+                        padding-left: 24px;
+                        .iconfont {
+                            font-size: 12px;
+                        }
+                    }
+                }
+                //人民币
+                .rmb {
+                    width: 80px;
+                    height: 31px;
+                    h4 {
+                        width: 40px;
+                        height: 28px;
+                        line-height: 28px;
+                        @include font-weight($normal);
+                        padding-left: 9px;
+                        font-size: $fontsize;
+                        font-family: 'INTERVOGUE-REG' 'Microsoft YaHei';
+                    }
+                }
+            }
+            //中间的logo
+            img {
+                display: inline-block;
+                text-align: center;
+                padding-top: 29px;
+                position: absolute;
+                left: 616px;
+            }
+            //右边
+            .right {
+                width: 156.56px;
                 height: 28px;
-                line-height: 28px;
-                font-weight: normal;
-                font-size: $fontsize;
+                @include folat($r);
+                margin-top: 62px;
+                display: flex;
                 justify-content: space-between;
-                padding-left: 24px;
+                .registers {
+                    width: 63px;
+                    height: 28px;
+                    @include folat($r);
+                    line-height: 22px;
+                    border-right: 1px solid #ccc;
+                    a {
+                        width: 63px;
+                        height: 28px;
+                        line-height: 28px;
+                        @include text-decoration(none);
+                        @include color($black);
+                        font-size: 12px;
+                        padding-left: 13px;
+                    }
+                }
+                .register {
+                    width: 63px;
+                    height: 28px;
+                    @include folat($r);
+                    line-height: 22px;
+                    border-right: 1px solid #ccc;
+                    a {
+                        width: 63px;
+                        height: 28px;
+                        line-height: 28px;
+                        @include text-decoration(none);
+                        @include color($black);
+                        font-size: 12px;
+                        padding-left: 13px;
+                    }
+                }
                 .iconfont {
-                    font-size: 12px;
+                    height: 28px;
+                    line-height: 28px;
+                    font-size: 20px;
+                }
+            }
+        } //头部导航栏的
+        .nav_top {
+            width: $window;
+            height: 50px;
+            background: #000;
+            position: relative;
+            .List {
+                @include width($wid);
+                margin: 0 auto;
+                background: #000;
+                color: #ffb81c;
+                display: flex;
+                justify-content: flex-start;
+                @include list-style($n);
+                .bagli1 {
+                    @include list-style($n);
+                    width: 60px;
+                    height: 50px;
+                    line-height: 50px;
+                    font-size: $fontsize;
+                    padding: 0 7px;
+                    @include float($l);
+                    position: relative;
+                }
+                .search {
+                    position: absolute;
+                    right: 0;
+                }
+            }
+            // 包袋
+            .secondary_menu {
+                @include width($wid);
+                height: 400px;
+                @include color($f);
+                position: absolute;
+                left: -73px;
+                background: red;
+                z-index: 10;
+                // display: none;
+                .bagli1_1 {
+                    @include list-style($n);
+                    @include folat($l);
+                    width: 400px;
+                    height: 400px;
+                    h4 {
+                        @include color(#000);
+                        width: 400px;
+                    }
+                    p {
+                        width: 200px;
+                        height: 300px;
+                        @include folat($l);
+                        a {
+                            width: 200px;
+                            display: inline-block;
+                            @include text-decoration(none);
+                            @include color(#000);
+                        }
+                    }
+                }
+                .bagli1_2 {
+                    float: left;
+                    @include list-style($n);
+                    height: 400px;
+                    width: 600px;
+                    @include folat($l);
+                    h4 {
+                        @include color(#000);
+                        width: 400px;
+                    }
+                    p {
+                        width: 200px;
+                        height: 300px;
+                        @include folat($l);
+                        a {
+                            width: 200px;
+                            display: inline-block;
+                            @include text-decoration(none);
+                            @include color(#000);
+                        }
+                    }
+                }
+            }
+            // 腕表
+            .wristwatch {
+                @include width($wid);
+                height: 400px;
+                @include color($f);
+                position: absolute;
+                left: -147px;
+                background: red;
+                @include list-style($n);
+                z-index: 10;
+                // display: none;
+                .wristwatch_1 {
+                    float: left;
+                    @include list-style($n);
+                    height: 400px;
+                    width: 600px;
+                    @include folat($l);
+                    h4 {
+                        @include color(#000);
+                        width: 400px;
+                    }
+                    p {
+                        width: 200px;
+                        height: 300px;
+                        @include folat($l);
+                        a {
+                            width: 200px;
+                            display: inline-block;
+                            @include text-decoration(none);
+                            @include color(#000);
+                        }
+                    }
+                }
+                .wristwatch_2 {
+                    float: left;
+                    @include list-style($n);
+                    height: 400px;
+                    width: 600px;
+                    @include folat($l);
+                    h4 {
+                        @include color(#000);
+                        width: 400px;
+                    }
+                    p {
+                        width: 200px;
+                        height: 300px;
+                        @include folat($l);
+                        a {
+                            width: 200px;
+                            display: inline-block;
+                            @include text-decoration(none);
+                            @include color(#000);
+                        }
+                    }
+                }
+            }
+            //珠宝首饰
+            .jewelry {
+                @include width($wid);
+                height: 400px;
+                @include color($f);
+                position: absolute;
+                left: -221px;
+                background: red;
+                @include list-style($n);
+                z-index: 10;
+                // display: none;
+                .jewelry_1 {
+                    float: left;
+                    @include list-style($n);
+                    height: 400px;
+                    width: 600px;
+                    @include folat($l);
+                    h4 {
+                        @include color(#000);
+                        width: 400px;
+                    }
+                    p {
+                        width: 200px;
+                        height: 300px;
+                        @include folat($l);
+                        a {
+                            width: 200px;
+                            display: inline-block;
+                            @include text-decoration(none);
+                            @include color(#000);
+                        }
+                    }
+                }
+                .jewelry_2 {
+                    float: left;
+                    @include list-style($n);
+                    height: 400px;
+                    width: 600px;
+                    @include folat($l);
+                    h4 {
+                        @include color(#000);
+                        width: 400px;
+                    }
+                    p {
+                        width: 200px;
+                        height: 300px;
+                        @include folat($l);
+                        a {
+                            width: 200px;
+                            display: inline-block;
+                            @include text-decoration(none);
+                            @include color(#000);
+                        }
+                    }
                 }
             }
         }
-        //人民币
-        .rmb {
-            width: 80px;
-            height: 31px;
-            h4 {
-                width: 40px;
-                height: 28px;
-                line-height: 28px;
-                font-weight: normal;
-                padding-left: 9px;
-                font-size: $fontsize;
-                font-family: 'INTERVOGUE-REG' 'Microsoft YaHei';
-            }
-        }
-    }
-    //中间的logo
-    img {
-        display: inline-block;
-        // margin: 0 auto;
-        text-align: center;
-        padding-top: 29px;
-        position: absolute;
-        left: 616px;
-    }
-    //右边
-    .right {
-        width: 156.56px;
-        height: 28px;
-        float: right;
-        margin-top: 62px;
-        display: flex;
-        justify-content: space-between;
-        .registers {
-            width: 63px;
-            height: 28px;
-            float: right;
-            line-height: 22px;
-            border-right: 1px solid #ccc;
-            a {
-                width: 63px;
-                height: 28px;
-                line-height: 28px;
-                text-decoration: none;
-                color: #000;
-                font-size: 12px;
-                padding-left: 13px;
-            }
-        }
-        .register {
-            width: 63px;
-            height: 28px;
-            float: right;
-            line-height: 22px;
-            border-right: 1px solid #ccc;
-            a {
-                width: 63px;
-                height: 28px;
-                line-height: 28px;
-                text-decoration: none;
-                color: #000;
-                font-size: 12px;
-                padding-left: 13px;
-            }
-        }
-        .iconfont {
-            height: 28px;
-            line-height: 28px;
-            font-size: 20px;
-        }
-    }
-} //头部右边的
-.nav_top {
-    width: $window;
-    height: 50px;
-    background: #000;
-    .List {
-        width: 1200px;
-        margin: 0 auto;
-        background: #000;
-        color: gold;
-        display: flex;
-        justify-content: flex-start;
-        list-style: none;
-        position: relative;
-        li {
-            width: 60px;
-            height: 50px;
-            line-height: 50px;
-            font-size: $fontsize;
-            padding: 0 7px;
-            float: left;
-        }
-        .search {
-            position: absolute;
-            right: 0;
-        }
-    }
-}
-
-//宣传图
-.publicity {
-    width: 1200px;
-    height: 980px;
-    margin: 0 auto;
-    padding-top: 20px;
-    #left {
-        width: 530px;
-        height: 900px;
-        display: inline-block;
-        position: relative;
-        img {
-            width: 530px;
-        }
-        #bottom_img {
-            position: absolute;
-            left: 0;
-            bottom: 0;
-        }
-    }
-    #right_huan {
-        width: 650px;
-        height: 980px;
-        float: right;
-        position: relative;
-        .bg_mask {
-            position: absolute;
-            right: 0;
-            top: 0px;
-            z-index: -1;
-        }
-        .right_img {
-            z-index: 1;
-            float: left;
-        }
-        #video_play {
+        
+        //宣传图
+        .publicity {
+            @include width($wid);
+            height: 980px;
+            margin: 0 auto;
             padding-top: 20px;
-            width: 650px;
-            height: 550px;
+            #left {
+                width: 530px;
+                height: 900px;
+                display: inline-block;
+                position: relative;
+                img {
+                    width: 530px;
+                }
+                #bottom_img {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                }
+            }
+            #right_huan {
+                width: 650px;
+                height: 980px;
+                @include folat($r);
+                position: relative;
+                .bg_mask {
+                    position: absolute;
+                    right: 0;
+                    top: 0px;
+                    z-index: -1;
+                }
+                .right_img {
+                    z-index: 1;
+                    @include float($l);
+                }
+                #video_play {
+                    padding-top: 20px;
+                    width: 650px;
+                    height: 550px;
+                }
+            }
         }
-    }
-}
-
-//列表页
-.nav {
-    width: 1200px;
-    height: 565px;
-    margin: 54px auto 42px;
-    // 小logo，用的背景图
-    .logo_top {
-        width: 100%;
-        height: 38px;
-        background: url(http://mpic.secooimg.com/images/2018/11/07/editor-pick.png) no-repeat center/266px 38px, url(http://mpic.secooimg.com/images/2018/11/07/title-line.png) no-repeat bottom;
-        margin-bottom: 40px;
-    }
-    // 这里是ul
-    .list {
-        width: 1200px;
-        height: 400px;
-        li {
-            width: 232px;
-            height: 400px;
-            list-style: none;
-            background-color: rgba(0, 0, 0, 0.1);
-            float: left;
-            margin-right: 10px;
-        }
-        .top_img {
-            width: 232px;
-            height: 232px;
-            // background-color: rgba(0, 0, 0, 0.1);
-            // opacity: 0.3;
-            img {
+        
+        //列表页
+        .nav {
+            @include width($wid);
+            height: 565px;
+            margin: 54px auto 42px;
+            // 小logo，用的背景图
+            .logo_top {
                 width: 100%;
-                height: 100%;
-                filter: brightness(90%); //这是是线性乘法
-                // filter: contrast(100%);这个是对比度
+                height: 38px;
+                background: url(http://mpic.secooimg.com/images/2018/11/07/editor-pick.png) no-repeat center/266px 38px, url(http://mpic.secooimg.com/images/2018/11/07/title-line.png) no-repeat bottom;
+                margin-bottom: 40px;
+            }
+            // 这里是ul
+            .list {
+                @include width($wid);
+                height: 400px;
+                li {
+                    width: 230px;
+                    height: 400px;
+                    @include list-style($n);
+                    background-color: rgba(0, 0, 0, 0.1);
+                    @include float($l);
+                    margin-right: 10px;
+                }
+                .top_img {
+                    width: 230px;
+                    height: 232px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        filter: brightness(90%); //这是是线性乘法
+                        // filter: contrast(100%);这个是对比度
+                    }
+                }
+                .li {
+                    padding: 34px 27px 0;
+                    .title {
+                        width: 176px;
+                        font-size: 14px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        font-family: 'CASLON224STD-BOOKITALIC';
+                    }
+                    .wire {
+                        width: 50px;
+                        border: 1px solid #000;
+                        margin-bottom: 18px;
+                    }
+                }
+            }
+            .logo_bottom {
+                @include width($wid);
+                height: 57px;
+                margin-top: 30px;
+                background: url(http://mpic.secooimg.com/images/2018/11/07/editor-pick-logo.png) no-repeat center/128px 57px, url(http://mpic.secooimg.com/images/2018/11/07/bottom-line.png) no-repeat 100%/100%;
+            }
+            .arrows {
+                display: flex;
+                justify-content: center;
+                .icon-zuojiantou {
+                    font-size: 33px;
+                    font-weight: 900;
+                    margin-top: 8px;
+                }
+                .icon-iconfontjiantou5 {
+                    font-size: 28px;
+                    font-weight: 700;
+                    margin-top: 10px;
+                }
             }
         }
-        .li {
-            padding: 34px 27px 0;
-            p {
-                font-size: 14px;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                font-family: 'CASLON224STD-BOOKITALIC';
+        
+        //宣传图
+        .img {
+            @include width($wid);
+            height: 630px;
+            margin: 0 auto;
+            position: relative;
+            margin-bottom: 30px;
+            .model {
+                width: 950px;
+                height: 630px;
+                @include float($l);
+                img {
+                    z-index: -1;
+                }
             }
-            .wire {
-                width: 50px;
-                border: 1px solid #000;
-                margin-bottom: 18px;
+            .closet {
+                width: 641px;
+                height: 630px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                img {
+                    z-index: 5;
+                }
             }
         }
-    }
-    .logo_bottom {
-        width: 1200px;
-        height: 57px;
-        margin-top: 30px;
-        // background: peachpuff;
-        background: url(http://mpic.secooimg.com/images/2018/11/07/editor-pick-logo.png) no-repeat center/128px 57px, url(http://mpic.secooimg.com/images/2018/11/07/bottom-line.png) no-repeat 100%/100%;
-    }
-    p {
-        display: flex;
-        justify-content: center;
-        .icon-zuojiantou {
-            font-size: 33px;
-            font-weight: 900;
-            margin-top: 8px;
+        
+        //二维码
+        .store_code {
+            @include width($wid);
+            height: 300px;
+            margin: 0 auto;
+            margin-bottom: 30px;
         }
-        .icon-iconfontjiantou5 {
-            font-size: 28px;
-            font-weight: 700;
-            margin-top: 10px;
-        }
-    }
-}
-
-//宣传图
-.img {
-    width: 1200px;
-    height: 630px;
-    margin: 0 auto;
-    position: relative;
-    margin-bottom: 30px;
-    .model {
-        width: 950px;
-        height: 630px;
-        float: left;
-        img {
-            z-index: -1;
-        }
-    }
-    .closet {
-        width: 641px;
-        height: 630px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        img {
-            z-index: 5;
-        }
-    }
-}
-
-//二维码
-.store_code {
-    width: 1200px;
-    height: 300px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-}
-
-//美妆魔法
-.plate-entry_ncontainer_clearfix {
-    width: 1200px;
-    height: 640px;
-    margin: 0 auto;
-    margin-top: 40px;
-    li {
-        width: 380px;
-        height: 600px;
-        list-style: none;
-        float: left;
-        margin: 0 15px;
-    }
-    .KOL {
-        margin-left: 0;
-    }
-    .paradise {
-        margin-right: 0;
-    }
-}
-
-//寺库网中国
-.secoo {
-    width: $window;
-    height: 724px;
-    background: #ffb81c;
-    .zh_temple {
-        width: 1200px;
-        height: 664px;
-        margin: 0 auto;
-        overflow: hidden;
-        h4 {
-            margin-top: 51px;
-            margin-bottom: 51px;
-            width: 1200px;
-            height: 109px;
-            display: flex;
-            justify-content: center;
-        }
-        ul {
-            width: 1200px;
+        
+        //美妆魔法
+        .plate-entry_ncontainer_clearfix {
+            @include width($wid);
+            height: 640px;
+            margin: 0 auto;
+            margin-top: 40px;
             li {
                 width: 380px;
-                height: 504px;
-                list-style: none;
-                float: left;
+                height: 600px;
+                @include list-style($n);
+                @include float($l);
                 margin: 0 15px;
             }
-            .global {
+            .KOL {
                 margin-left: 0;
             }
-            .we {
+            .paradise {
                 margin-right: 0;
             }
         }
-    }
-}
-
-//底部
-footer {
-    width: $window;
-    height: 565px;
-    background: #ffb81c;
-    // 左边样式
-    .base {
-        width: 1200px;
-        height: 277.8px;
-        margin: 0 auto;
-        overflow: hidden;
-        .serveleft {
-            width: 325px;
-            float: left;
-            list-style: none;
-            height: 277.8px;
-            margin-top: 20px;
-            // background: orangered;
-            h4 {
-                width: 325px;
-                height: 20.8px;
-                font-weight: normal
+        
+        //寺库网中国
+        .secoo {
+            width: $window;
+            height: 724px;
+            background: #ffb81c;
+            .zh_temple {
+                @include width($wid);
+                height: 664px;
+                margin: 0 auto;
+                overflow: hidden;
+                h4 {
+                    margin-top: 51px;
+                    margin-bottom: 51px;
+                    @include width($wid);
+                    height: 109px;
+                    display: flex;
+                    justify-content: center;
+                }
+                ul {
+                    @include width($wid);
+                    li {
+                        width: 380px;
+                        height: 504px;
+                        @include list-style($n);
+                        @include float($l);
+                        margin: 0 15px;
+                    }
+                    .global {
+                        margin-left: 0;
+                    }
+                    .we {
+                        margin-right: 0;
+                    }
+                }
             }
-            p {
-                width: 325px;
-                height: 19.2px;
-                margin: 12px 0;
+        }
+        
+        //底部
+        footer {
+            width: $window;
+            height: 565px;
+            background: #ffb81c;
+            // 左边样式
+            .base {
+                @include width($wid);
+                height: 277.8px;
+                margin: 0 auto;
+                overflow: hidden;
+                .serveleft {
+                    width: 325px;
+                    @include float($l);
+                    @include list-style($n);
+                    height: 277.8px;
+                    margin-top: 20px;
+                    h4 {
+                        width: 325px;
+                        height: 20.8px;
+                        @include font-weight($normal);
+                    }
+                    p {
+                        width: 325px;
+                        height: 19.2px;
+                        margin: 12px 0;
+                        a {
+                            width: 159.5px;
+                            display: inline-block;
+                            @include text-decoration(none);
+                            @include color($black);
+                        }
+                    }
+                }
+                // 中间样式
+                .mediacenter {
+                    width: 550px;
+                    height: 277.8px;
+                    // list-style: none;
+                    @include list-style($n);
+                    // float: left;
+                    @include float($l);
+                    margin-top: 20px;
+                    h4 {
+                        width: 550px;
+                        height: 20.8px;
+                        @include font-weight($normal);
+                        text-align: center;
+                    }
+                    .promotion {
+                        width: 550px;
+                        height: 240px;
+                        background: url(http://mpic.secooimg.com/images/2018/11/07/footer-logo.png) no-repeat 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        span {
+                            margin: 0 106px;
+                        }
+                    }
+                }
+                // 右边
+                .APPright {
+                    width: 78.84px;
+                    height: 145.8px;
+                    // list-style: none;
+                    @include list-style($n);
+                    // float: left;
+                    @include float($l);
+                    margin-top: 20px;
+                    margin: 0 0 0 207px;
+                    h4 {
+                        @include font-weight($normal);
+                        margin: 0 0 18px 0;
+                    }
+                    p {
+                        margin: 0 0 10px 0;
+                    }
+                }
+            }
+            .certificate {
+                @include width($wid);
+                height: 120.63px;
+                margin: 0 auto;
+                margin-top: 40px;
+                p {
+                    height: 21.43px;
+                    margin-top: 17.5px;
+                    a {
+                        height: 21.43px;
+                        @include text-decoration(none);
+                        @include color($black);
+                        font-size: 14px;
+                        line-height: 21.43px;
+                        // display: inline-block;
+                        img {
+                            margin-top: 3px;
+                            vertical-align: top;
+                        }
+                    }
+                    span {
+                        font-size: 14px;
+                        padding-left: 25px;
+                    }
+                    .public {
+                        width: 108px;
+                        height: 40px;
+                        display: inline-block;
+                        vertical-align: baseline;
+                    }
+                }
+            }
+            .bottom_p {
+                width: $window;
+                height: 20px;
+                margin-top: 40px;
                 a {
-                    width: 159.5px;
-                    display: inline-block;
-                    text-decoration: none;
-                    color: #000;
+                    display: flex;
+                    justify-content: center;
+                    @include text-decoration(none);
+                    color: #939393;
                 }
             }
         }
-        // 中间样式
-        .mediacenter {
-            width: 550px;
-            height: 277.8px;
-            list-style: none;
-            float: left;
-            margin-top: 20px;
-            h4 {
-                width: 550px;
-                height: 20.8px;
-                font-weight: normal;
-                text-align: center;
-            }
-            .promotion {
-                width: 550px;
-                height: 240px;
-                background: url(http://mpic.secooimg.com/images/2018/11/07/footer-logo.png) no-repeat 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                span {
-                    margin: 0 106px;
-                }
-            }
+        
+        .immobilization {
+            width: 120px;
+            height: 164px;
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 100;
         }
-        // 右边
-        .APPright {
-            width: 78.84px;
-            height: 145.8px;
-            list-style: none;
-            float: left;
-            margin-top: 20px;
-            margin: 0 0 0 207px;
-            h4 {
-                font-weight: normal;
-                margin: 0 0 18px 0;
-            }
-            p {
-                margin: 0 0 10px 0;
-            }
-        }
-    }
-    .certificate {
-        width: 1200px;
-        height: 120.63px;
-        margin: 0 auto;
-        margin-top: 40px;
-        p {
-            height: 21.43px;
-            margin-top: 17.5px;
-            a {
-                height: 21.43px;
-                text-decoration: none;
-                color: #000;
-                font-size: 14px;
-                line-height: 21.43px;
-                img {
-                    margin-top: 3px;
-                }
-            }
-            span {
-                font-size: 14px;
-                padding-left: 25px;
-            }
-            .public {
-                width: 108px;
-                height: 40px;
-                display: inline-block;
-            }
-        }
-    }
-    .bottom_p {
-        width: $window;
-        height: 20px;
-        margin-top: 40px;
-        a {
-            display: flex;
-            justify-content: center;
-            text-decoration: none;
-            color: #939393;
-        }
-    }
-}
-
-.immobilization {
-    width: 120px;
-    height: 164px;
-    background: powderblue;
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    z-index: 100;
-}

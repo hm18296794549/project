@@ -1,0 +1,73 @@
+$o:#ffb81c; //移入的时候的颜色
+$wir:#fff;
+//移入的时候变得颜色
+@mixin color($o) {
+    color: $o;
+}
+
+//左边的中文移入的时候变色
+.left {
+    .zh {
+        h4:hover {
+            @include color($o);
+        }
+    }
+}
+
+// 右边的登录注册移入的时候变色
+.right {
+    .registers {
+        a:hover {
+            @include color($o);
+        }
+    }
+    .register {
+        a:hover {
+            @include color($o);
+        }
+    }
+    span:hover {
+        @include color($o);
+    }
+}
+
+// 头部导航的移入
+.List {
+    li:hover {
+        @include color($wir);
+    }
+    .search:hover {
+        color: #ffb81c;
+    }
+}
+
+//宣传栏
+//左边部分
+.publicity {
+    #left {
+        .handbag:hover {
+            filter: brightness(90%);
+        }
+    }
+    #right_huan {
+        .bg_mask:hover {
+            filter: brightness(90%);
+        }
+    }
+}
+
+.img:hover {
+    filter: brightness(90%);
+}
+
+.plate-entry_ncontainer_clearfix {
+    li:hover {
+        filter: brightness(80%);
+    }
+}
+
+.secoo {
+    li:hover {
+        filter: brightness(80%);
+    }
+}

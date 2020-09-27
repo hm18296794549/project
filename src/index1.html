@@ -2,11 +2,15 @@
 <html lang="zh">
 
 <head>
+    <meta charset="UTF-8">
     <title>寺库网-全球奢侈品服务平台_寺库,我是奢侈品</title>
     <meta name="keywords" content="寺库，寺库网，奢侈品，奢侈品网站，奢侈品网，奢侈品购物">
     <meta name="description" content="寺库奢侈品网站(secoo.com)作为全球最大的奢侈品购物服务平台，涉及了奢侈品网上销售、奢侈品实体休闲会所、奢侈品鉴定与养护服务等主营业务，100%正品保证，全球奢品，尽在寺库。寺库，我是奢侈品！">
     <link rel="stylesheet" href="../font/iconfont.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/index_hover.css">
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./script/index.js"></script>
 </head>
 
 <body>
@@ -51,18 +55,220 @@
     <!-- 头部导航 -->
     <div class="nav_top">
         <ul class="List">
-            <li>首页</li>
-            <li>包袋</li>
-            <li>腕表</li>
-            <li>珠宝首饰</li>
-            <li>服饰</li>
-            <li>鞋履</li>
-            <li>配饰</li>
-            <li>运动</li>
-            <li>家具</li>
-            <li>美妆</li>
-            <li>生活方式</li>
-            <li class="search">搜索&nbsp;&nbsp;<span class="iconfont icon-fangdajing
+            <li class="bagli1">首页</li>
+            <li class="bagli1">
+                包袋
+                <!-- 包袋 -->
+                <ul class="bag secondary_menu">
+                    <li class="bagli1_1">
+                        <h4>分类</h4>
+                        <p>
+                            <a href="">男士包袋</a>
+                            <a href="">钱包</a>
+                            <a href="">斜挎包</a>
+                            <a href="">双肩包</a>
+                        </p>
+                        <p>
+                            <a href="">女士包袋</a>
+                            <a href="">手拿包</a>
+                            <a href="">拉杆箱</a>
+                            <a href="">手提包</a>
+                        </p>
+                    </li>
+                    <li class="bagli1_2">
+                        <h4>品牌</h4>
+                        <p style="margin-left: 30px;">
+                            <a href="">爱马仕</a>
+                            <a href="">路易登威</a>
+                            <a href="">宝格丽</a>
+                            <a href="">范思哲</a>
+                            <a href="">普拉达</a>
+                            <a href="">谬谬</a>
+
+                        </p>
+                        <p style="margin-left: 30px;">
+                            <a href="">香奈儿</a>
+                            <a href="">古驰</a>
+                            <a href="">蔻驰</a>
+                            <a href="">杜嘉班纳</a>
+                            <a href="">迪奥</a>
+
+                        </p>
+                        <p style="margin-left: 30px;">
+                            <a href="">圣罗兰</a>
+                            <a href="">葆蝶家</a>
+                            <a href="">克洛伊</a>
+                            <a href="">亚历山大麦昆</a>
+                        </p>
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li class="bagli1">
+                腕表
+                <!-- 腕表 -->
+                <ul class="wristwatch secondary_menu">
+                    <li class="wristwatch_1">
+                        <h4>分类</h4>
+                        <p>
+                            <a href="">男士</a>
+                            <a href="">机械腕表</a>
+                        </p>
+                        <p>
+                            <a href="">女士</a>
+                            <a href="">石英腕表</a>
+                        </p>
+                    </li>
+                    <li class="wristwatch_2">
+                        <h4>品牌</h4>
+                        <p>
+                            <a href="">百达翡丽</a>
+                            <a href="">宝玑</a>
+                            <a href="">芝柏</a>
+                            <a href="">沛纳海</a>
+                            <a href="">真力时</a>
+                            <a href="">浪琴</a>
+                        </p>
+                        <p>
+                            <a href="">江诗丹顿</a>
+                            <a href="">格朗</a>
+                            <a href="">萧邦</a>
+                            <a href="">格拉苏蒂</a>
+                            <a href="">卡地亚</a>
+                            <a href="">苏蒂</a>
+                        </p>
+                        <p>
+                            <a href="">宝柏</a>
+                            <a href="">积家</a>
+                            <a href="">万国</a>
+                            <a href="">劳力士</a>
+                            <a href="">欧米茄</a>
+                            <a href="">汉密尔顿</a>
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li class="bagli1">
+                珠宝首饰
+                <!-- 珠宝首饰 -->
+                <ul class="jewelry secondary_menu">
+                    <li class="jewelry_1">
+                        <h4>分类</h4>
+                        <p>
+                            <a href="">项链</a>
+                            <a href="">手链</a>
+                            <a href="">手镯</a>
+                            <a href="">手串</a>
+                            <a href="">首饰套装</a>
+                            <a href="">头饰</a>
+                        </p>
+                        <p>
+                            <a href="">吊坠</a>
+                            <a href="">耳饰</a>
+                            <a href="">戒指/指环</a>
+                            <a href="">串珠配珠</a>
+                            <a href="">胸针</a>
+                        </p>
+                    </li>
+                    <li class="jewelry_2">
+                        <h4>品牌</h4>
+                        <p>
+                            <a href="">梵克雅宝</a>
+                            <a href="">迪奥</a>
+                            <a href="">爱马仕</a>
+                            <a href="">路易登威</a>
+                        </p>
+                        <p>
+                            <a href="">尚美</a>
+                            <a href="">宝格丽</a>
+                            <a href="">潘多拉</a>
+                            <a href="">Apm Monaco</a>
+                        </p>
+                        <p>
+                            <a href="">蒂芙尼</a>
+                            <a href="">施华洛世奇</a>
+                            <a href="">香奈儿</a>
+                            <a href="">莫妮卡维纳德</a>
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li class="bagli1">
+                服饰
+                <!-- 服饰 -->
+                <!-- <ul class="costume secondary_menu">
+                    <li class="costume_1">
+                        <h4>分类</h4>
+                        <p>
+                            <a href=""></a>
+                            <a href=""></a>
+                            <a href=""></a>
+                            <a href=""></a>
+                            <a href=""></a>
+                            <a href=""></a>
+                        </p>
+                        <p>
+                            <a href=""></a>
+                            <a href=""></a>
+                            <a href=""></a>
+                            <a href=""></a>
+                            <a href=""></a>
+                        </p>
+                    </li>
+                    <li class="costume_2">
+                        <h4>品牌</h4>
+                    </li>
+                </ul> -->
+            </li>
+            <li class="bagli1">
+                鞋履
+                <!-- 鞋履 -->
+                <!-- <ul class="shoes secondary_menu">
+                    <li></li>
+                    <li></li>
+                </ul> -->
+            </li>
+            <li class="bagli1">
+                配饰
+                <!-- 配饰 -->
+                <!-- <ul class="accessory secondary_menu">
+                    <li></li>
+                    <li></li>
+                </ul> -->
+            </li>
+            <li class="bagli1">
+                运动
+                <!-- 运动 -->
+                <!-- <ul class="exercise secondary_menu">
+                    <li></li>
+                    <li></li>
+                </ul> -->
+            </li>
+            <li class="bagli1">
+                家具
+                <!-- 家具 -->
+                <!-- <ul class="furniture secondary_menu">
+                    <li></li>
+                    <li></li>
+                </ul> -->
+            </li>
+            <li class="bagli1">
+                美妆
+                <!-- 美妆 -->
+                <!-- <ul class="beauty secondary_menu">
+                    <li></li>
+                    <li></li>
+                </ul> -->
+            </li>
+            <li class="bagli1">
+                生活方式
+                <!-- 生活方式 -->
+                <!-- <ul class="life_style  secondary_menu">
+                    <li></li>
+                    <li></li>
+                </ul> -->
+            </li>
+            <li class="search bagli1">搜索&nbsp;&nbsp;<span class="iconfont icon-fangdajing
             "></span></li>
         </ul>
 
@@ -72,7 +278,7 @@
         <!-- 左边部分 -->
         <span id="left">
             <a href="http://www.secoo.com/listTop/2019-1111.shtml">
-            <img src="http://pic13.secooimg.com/push/2020/0707/f6285a94c2dd4bd5b0ec02892f906783.png" alt="">
+            <img src="http://pic13.secooimg.com/push/2020/0707/f6285a94c2dd4bd5b0ec02892f906783.png" alt="" class="handbag">
         </a>
         <a href="http://www.secoo.com/listTop/2019-1111.shtml"><img src="http://pic12.secooimg.com/push/18/11/34f9f24874af4ae6a6a5d8f0aa253ddf.png" alt="" id="bottom_img"></a>
         </span>
@@ -83,7 +289,7 @@
             <a href="http://www.secoo.com/listTop/ka.shtml">
                 <img src="http://pic13.secooimg.com/push/18/11/5e08f1525e484e95824002ae33cb6322.png" alt="" class="right_img"></a>
 
-            <a href="http://www.secoo.com/listTop/ka.shtml"><img src="http://pic11.secooimg.com/push/18/11/ad48819e0e524d72a31dfb902561f744.jpg" alt="" class="bg_mask">
+            <a href="http://www.secoo.com/listTop/ka.shtml"><img src="http://pic11.secooimg.com/push/18/11/ad48819e0e524d72a31dfb902561f744.jpg" class="bg_mask">
             </a>
             <!-- 这是视频 -->
             <a href="http://www.secoo.com/listTop/ka.shtml">
@@ -99,60 +305,11 @@
         <div class="logo_top"></div>
         <div class="list">
             <ul>
-                <li style="margin-left: 0;">
-                    <div class="top_img">
-                        <img src="http://pic11.secooimg.com/product/300/300/2020/0709/4c5ff836e2764defa62235a2784dd898.jpg" alt=""></div>
-                    <div class="li">
-                        <p style="height: 28px;">HOGAN/HOGAN</p>
-                        <p style="height: 44px;">2020秋冬新品HOGAN/HOGAN女士增高老爹鞋MaxiIActive系列运动鞋</p>
-                        <p class="wire"></p>
-                        <p class="p">￥4,500</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="top_img">
-                        <img src="http://pic11.secooimg.com/product/300/300/2020/0623/d1e4b34866fb4314ba0c12058d8418e8.jpg" alt=""></div>
-                    <div class="li">
-                        <p style="height: 28px;">ARMANI EXCHANGE/ARMANI EXCHANGE</p>
-                        <p style="height: 44px;">ARMANI EXCHANGE 白色 男士动物图案印花短袖T恤 3HZTGX-ZJH4Z-7189 2020年春夏</p>
-                        <p class="wire"></p>
-                        <p class="p">￥280</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="top_img">
-                        <img src="http://pic11.secooimg.com/product/300/300/2020/0624/f827427fdff04310a0bb620994384320.jpg" alt=""></div>
-                    <div class="li">
-                        <p style="height: 28px;">ARMANI EXCHANGE/ARMANI EXCHANGE</p>
-                        <p style="height: 44px;">ARMANI EXCHANGE 黑色 男士建筑图案印花圆领短袖T恤 3HZTAH-ZJA5Z-1200 2020年春夏</p>
-                        <p class="wire"></p>
-                        <p class="p">￥340</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="top_img">
-                        <img src="http://pic11.secooimg.com/product/300/300/2020/0624/1b0c9c718c0c4c9ea6dae2969a9237c7.jpg" alt=""></div>
-                    <div class="li">
-                        <p style="height: 28px;">ARMANI EXCHANGE/ARMANI EXCHANGE</p>
-                        <p style="height: 44px;">ARMANI EXCHANGE 蓝色 男士卡通图案印花修身短袖T恤 3HZTHT-ZJBVZ-1515 2020年春夏</p>
-                        <p class="wire"></p>
-                        <p class="p">￥254</p>
-                    </div>
-                </li>
-                <li style="margin-right: 0;">
-                    <div class="top_img">
-                        <img src="http://pic11.secooimg.com/product/300/300/2020/0624/fab6d85c902243cdaefe275eeb00faab.jpg" alt=""></div>
-                    <div class="li">
-                        <p style="height: 28px;">ARMANI EXCHANGE/ARMANI EXCHANGE</p>
-                        <p style="height: 44px;">ARMANI EXCHANGE 蓝色 男士动物图案印花短袖T恤 3HZTGX-ZJH4Z-5537 2020年春夏</p>
-                        <p class="wire"></p>
-                        <p class="p">￥280</p>
-                    </div>
-                </li>
+
             </ul>
         </div>
         <div class="logo_bottom">
-            <p>
+            <p class="arrows">
                 <span class="iconfont icon-zuojiantou"></span>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <span class="iconfont icon-iconfontjiantou5"></span>
             </p>
@@ -339,7 +496,10 @@
         </p>
     </footer>
     <!-- 固定定位二维码 -->
-    <div class="immobilization"></div>
+    <div class="immobilization">
+        <img src="http://pic13.secooimg.com/push/2019/1104/1dc88493a92a4cccbefdaf9f4be61c3f.jpg" alt="">
+    </div>
 </body>
+
 
 </html>
