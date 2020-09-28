@@ -46,3 +46,27 @@
   -webkit-filter: brightness(80%);
           filter: brightness(80%);
 }
+
+.list ul {
+  overflow: hidden;
+}
+
+.list ul li {
+  overflow: hidden;
+}
+
+.list ul li:hover {
+  -webkit-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+          transform: translateY(-10px);
+  border-bottom: #ffb81c 10px solid;
+  color: #ffb81c;
+}
+
+.list ul .li:hover p {
+  color: #ffb81c;
+}
+
+.list ul .li:hover p {
+  color: #ffb81c;
+}

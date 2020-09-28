@@ -71,3 +71,24 @@ $wir:#fff;
         filter: brightness(80%);
     }
 }
+
+//列表页的hover效果
+.list {
+    ul {
+        overflow: hidden;
+        li {
+            overflow: hidden;
+        }
+        li:hover {
+            transform: translateY(-10px);
+            border-bottom: #ffb81c 10px solid;
+            color: #ffb81c;
+        }
+        .li:hover p {
+            color: #ffb81c;
+        }
+        .li:hover p {
+            color: #ffb81c;
+        }
+    }
+}

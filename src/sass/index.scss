@@ -72,7 +72,7 @@
                     width: 80px;
                     height: 31px;
                     border-right: 1px solid #ccc;
-                    ;
+                    position: relative;
                     h4 {
                         width: 40px;
                         height: 28px;
@@ -85,7 +85,25 @@
                             font-size: 12px;
                         }
                     }
+                    .en {
+                        width: 79px;
+                        height: 63px;
+                        border: 1px solid #000;
+                        position: absolute;
+                        left: 0;
+                        display: none;
+                        background: #fff;
+                        z-index: 10;
+                        h4 {
+                            width: 79px;
+                            display: flex;
+                            justify-content: center;
+                            @include font-weight($normal);
+                            padding-left: 0;
+                        }
+                    }
                 }
+                //英文
                 //人民币
                 .rmb {
                     width: 80px;
@@ -169,6 +187,7 @@
                 display: flex;
                 justify-content: flex-start;
                 @include list-style($n);
+                position: relative;
                 .bagli1 {
                     @include list-style($n);
                     width: 60px;
@@ -182,18 +201,44 @@
                 .search {
                     position: absolute;
                     right: 0;
+                    display: block;
+                    .icon-fangdajing {
+                        color: #ffb81c;
+                        position: absolute;
+                        top: 0px;
+                        right: 0;
+                    }
+                }
+                //搜索框
+                .search_input {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    // display: none;
+                    .input {
+                        width: 197px;
+                        height: 40px;
+                        border: none;
+                        background: #000;
+                        border-bottom: 1px solid #fff;
+                    }
+                    .iconfont {
+                        color: #fff;
+                    }
                 }
             }
             // 包袋
             .secondary_menu {
                 @include width($wid);
                 height: 400px;
-                @include color($f);
+                background: #fff;
                 position: absolute;
-                left: -73px;
-                background: red;
+                left: -74px;
                 z-index: 10;
-                // display: none;
+                display: none;
                 .bagli1_1 {
                     @include list-style($n);
                     @include folat($l);
@@ -226,7 +271,7 @@
                         width: 400px;
                     }
                     p {
-                        width: 200px;
+                        width: 150px;
                         height: 300px;
                         @include folat($l);
                         a {
@@ -242,13 +287,12 @@
             .wristwatch {
                 @include width($wid);
                 height: 400px;
-                @include color($f);
+                background: #fff;
                 position: absolute;
-                left: -147px;
-                background: red;
+                left: -148px;
                 @include list-style($n);
                 z-index: 10;
-                // display: none;
+                display: none;
                 .wristwatch_1 {
                     float: left;
                     @include list-style($n);
@@ -298,13 +342,12 @@
             .jewelry {
                 @include width($wid);
                 height: 400px;
-                @include color($f);
+                background: #fff;
                 position: absolute;
-                left: -221px;
-                background: red;
+                left: -222px;
                 @include list-style($n);
                 z-index: 10;
-                // display: none;
+                display: none;
                 .jewelry_1 {
                     float: left;
                     @include list-style($n);
@@ -328,6 +371,392 @@
                     }
                 }
                 .jewelry_2 {
+                    float: left;
+                    @include list-style($n);
+                    height: 400px;
+                    width: 600px;
+                    @include folat($l);
+                    h4 {
+                        @include color(#000);
+                        width: 400px;
+                    }
+                    p {
+                        width: 200px;
+                        height: 300px;
+                        @include folat($l);
+                        a {
+                            width: 200px;
+                            display: inline-block;
+                            @include text-decoration(none);
+                            @include color(#000);
+                        }
+                    }
+                }
+            }
+            //服饰
+            .costume {
+                @include width($wid);
+                height: 400px;
+                background: #fff;
+                position: absolute;
+                left: -296px;
+                @include list-style($n);
+                z-index: 10;
+                display: none;
+                .costume_1 {
+                    float: left;
+                    @include list-style($n);
+                    height: 400px;
+                    width: 600px;
+                    @include folat($l);
+                    h4 {
+                        @include color(#000);
+                        width: 400px;
+                    }
+                    p {
+                        width: 200px;
+                        height: 300px;
+                        @include folat($l);
+                        a {
+                            width: 200px;
+                            display: inline-block;
+                            @include text-decoration(none);
+                            @include color(#000);
+                        }
+                    }
+                }
+                .costume_2 {
+                    float: left;
+                    @include list-style($n);
+                    height: 400px;
+                    width: 600px;
+                    @include folat($l);
+                    h4 {
+                        @include color(#000);
+                        width: 400px;
+                    }
+                    p {
+                        width: 200px;
+                        height: 300px;
+                        @include folat($l);
+                        a {
+                            width: 200px;
+                            display: inline-block;
+                            @include text-decoration(none);
+                            @include color(#000);
+                        }
+                    }
+                }
+            }
+            //鞋履
+            .shoes {
+                @include width($wid);
+                height: 400px;
+                background: #fff;
+                position: absolute;
+                left: -370px;
+                @include list-style($n);
+                z-index: 10;
+                display: none;
+                .shoes_1 {
+                    float: left;
+                    @include list-style($n);
+                    height: 400px;
+                    width: 600px;
+                    @include folat($l);
+                    h4 {
+                        @include color(#000);
+                        width: 400px;
+                    }
+                    p {
+                        width: 200px;
+                        height: 300px;
+                        @include folat($l);
+                        a {
+                            width: 200px;
+                            display: inline-block;
+                            @include text-decoration(none);
+                            @include color(#000);
+                        }
+                    }
+                }
+                .shoes_2 {
+                    float: left;
+                    @include list-style($n);
+                    height: 400px;
+                    width: 600px;
+                    @include folat($l);
+                    h4 {
+                        @include color(#000);
+                        width: 400px;
+                    }
+                    p {
+                        width: 200px;
+                        height: 300px;
+                        @include folat($l);
+                        a {
+                            width: 200px;
+                            display: inline-block;
+                            @include text-decoration(none);
+                            @include color(#000);
+                        }
+                    }
+                }
+            }
+            //配饰
+            .accessory {
+                @include width($wid);
+                height: 400px;
+                background: #fff;
+                position: absolute;
+                left: -444px;
+                @include list-style($n);
+                z-index: 10;
+                display: none;
+                .accessory_1 {
+                    float: left;
+                    @include list-style($n);
+                    height: 400px;
+                    width: 600px;
+                    @include folat($l);
+                    h4 {
+                        @include color(#000);
+                        width: 400px;
+                    }
+                    p {
+                        width: 200px;
+                        height: 300px;
+                        @include folat($l);
+                        a {
+                            width: 200px;
+                            display: inline-block;
+                            @include text-decoration(none);
+                            @include color(#000);
+                        }
+                    }
+                }
+                .accessory_2 {
+                    float: left;
+                    @include list-style($n);
+                    height: 400px;
+                    width: 600px;
+                    @include folat($l);
+                    h4 {
+                        @include color(#000);
+                        width: 400px;
+                    }
+                    p {
+                        width: 200px;
+                        height: 300px;
+                        @include folat($l);
+                        a {
+                            width: 200px;
+                            display: inline-block;
+                            @include text-decoration(none);
+                            @include color(#000);
+                        }
+                    }
+                }
+            }
+            //运动
+            .exercise {
+                @include width($wid);
+                height: 400px;
+                background: #fff;
+                position: absolute;
+                left: -518px;
+                @include color($f);
+                @include list-style($n);
+                z-index: 10;
+                display: none;
+                .exercise_1 {
+                    float: left;
+                    @include list-style($n);
+                    height: 400px;
+                    width: 600px;
+                    @include folat($l);
+                    h4 {
+                        @include color(#000);
+                        width: 400px;
+                    }
+                    p {
+                        width: 200px;
+                        height: 300px;
+                        @include folat($l);
+                        a {
+                            width: 200px;
+                            display: inline-block;
+                            @include text-decoration(none);
+                            @include color(#000);
+                        }
+                    }
+                }
+                .exercise_2 {
+                    float: left;
+                    @include list-style($n);
+                    height: 400px;
+                    width: 600px;
+                    @include folat($l);
+                    h4 {
+                        @include color(#000);
+                        width: 400px;
+                    }
+                    p {
+                        width: 200px;
+                        height: 300px;
+                        @include folat($l);
+                        a {
+                            width: 200px;
+                            display: inline-block;
+                            @include text-decoration(none);
+                            @include color(#000);
+                        }
+                    }
+                }
+            }
+            //家居
+            .furniture {
+                @include width($wid);
+                height: 400px;
+                background: #fff;
+                position: absolute;
+                left: -592px;
+                @include list-style($n);
+                z-index: 10;
+                display: none;
+                .furniture_1 {
+                    float: left;
+                    @include list-style($n);
+                    height: 400px;
+                    width: 600px;
+                    @include folat($l);
+                    h4 {
+                        @include color(#000);
+                        width: 400px;
+                    }
+                    p {
+                        width: 200px;
+                        height: 300px;
+                        @include folat($l);
+                        a {
+                            width: 200px;
+                            display: inline-block;
+                            @include text-decoration(none);
+                            @include color(#000);
+                        }
+                    }
+                }
+                .furniture_2 {
+                    float: left;
+                    @include list-style($n);
+                    height: 400px;
+                    width: 600px;
+                    @include folat($l);
+                    h4 {
+                        @include color(#000);
+                        width: 400px;
+                    }
+                    p {
+                        width: 200px;
+                        height: 300px;
+                        @include folat($l);
+                        a {
+                            width: 200px;
+                            display: inline-block;
+                            @include text-decoration(none);
+                            @include color(#000);
+                        }
+                    }
+                }
+            }
+            //美妆
+            .beauty {
+                @include width($wid);
+                height: 400px;
+                background: #fff;
+                position: absolute;
+                left: -666px;
+                @include list-style($n);
+                z-index: 10;
+                display: none;
+                .beauty_1 {
+                    float: left;
+                    @include list-style($n);
+                    height: 400px;
+                    width: 600px;
+                    @include folat($l);
+                    h4 {
+                        @include color(#000);
+                        width: 400px;
+                    }
+                    p {
+                        width: 200px;
+                        height: 300px;
+                        @include folat($l);
+                        a {
+                            width: 200px;
+                            display: inline-block;
+                            @include text-decoration(none);
+                            @include color(#000);
+                        }
+                    }
+                }
+                .beauty_2 {
+                    float: left;
+                    @include list-style($n);
+                    height: 400px;
+                    width: 600px;
+                    @include folat($l);
+                    h4 {
+                        @include color(#000);
+                        width: 400px;
+                    }
+                    p {
+                        width: 200px;
+                        height: 300px;
+                        @include folat($l);
+                        a {
+                            width: 200px;
+                            display: inline-block;
+                            @include text-decoration(none);
+                            @include color(#000);
+                        }
+                    }
+                }
+            }
+            //生活方式
+            .life_style {
+                @include width($wid);
+                height: 400px;
+                position: absolute;
+                left: -740px;
+                background: #fff;
+                @include list-style($n);
+                z-index: 10;
+                display: none;
+                .life_style_1 {
+                    float: left;
+                    @include list-style($n);
+                    height: 400px;
+                    width: 600px;
+                    @include folat($l);
+                    h4 {
+                        @include color(#000);
+                        width: 400px;
+                    }
+                    p {
+                        width: 200px;
+                        height: 300px;
+                        @include folat($l);
+                        a {
+                            width: 200px;
+                            display: inline-block;
+                            @include text-decoration(none);
+                            @include color(#000);
+                        }
+                    }
+                }
+                .life_style_2 {
                     float: left;
                     @include list-style($n);
                     height: 400px;
@@ -409,8 +838,15 @@
             }
             // 这里是ul
             .list {
-                @include width($wid);
+                width: 1200px;
                 height: 400px;
+                position: relative;
+                overflow: hidden;
+                ul {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
                 li {
                     width: 230px;
                     height: 400px;
@@ -418,6 +854,7 @@
                     background-color: rgba(0, 0, 0, 0.1);
                     @include float($l);
                     margin-right: 10px;
+                    top: 0;
                 }
                 .top_img {
                     width: 230px;
@@ -444,6 +881,9 @@
                         border: 1px solid #000;
                         margin-bottom: 18px;
                     }
+                    p {
+                        color: #000;
+                    }
                 }
             }
             .logo_bottom {
@@ -459,6 +899,7 @@
                     font-size: 33px;
                     font-weight: 900;
                     margin-top: 8px;
+                    color: #fff;
                 }
                 .icon-iconfontjiantou5 {
                     font-size: 28px;
@@ -617,8 +1058,27 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
+                        position: relative;
                         span {
                             margin: 0 106px;
+                        }
+                        .promotion_1 {
+                            position: absolute;
+                            left: -17px;
+                            top: 60px;
+                            display: inline-block;
+                            width: 126px;
+                            height: 120px;
+                            display: none;
+                        }
+                        .promotion_2 {
+                            position: absolute;
+                            right: 168px;
+                            top: 60px;
+                            display: inline-block;
+                            width: 126px;
+                            height: 120px;
+                            display: none;
                         }
                     }
                 }
