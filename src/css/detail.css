@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.contents {
+  width: 1200px;
+  height: 781.16px;
+  margin: 0 auto;
+  padding: 40px 50px 12px 40px;
+}
+
+.contents .left {
+  width: 483px;
+  height: 402px;
+  float: left;
+}
+
+.contents .left .picture_xiao {
+  width: 80px;
+  height: 400px;
+  float: left;
+  border: 1px solid #ccc;
+}
+
+.contents .left .picture_xiao li {
+  width: 80px;
+  height: 80px;
+  list-style: none;
+}
+
+.contents .left .picture_xiao li img {
+  width: 100%;
+  height: 80px;
+}
+
+.contents .left .picture_da {
+  width: 400px;
+  height: 400px;
+  float: left;
+  border: 1px solid #ccc;
+  border-left: none;
+  position: relative;
+}
+
+.contents .left .picture_da .magnifying_glass {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.contents .left .picture_da .faj_img {
+  width: 400px;
+  height: 400px;
+  background: #000;
+  display: none;
+}
+
+.contents .right {
+  width: 597px;
+  height: 705.16px;
+  float: right;
+}
+
+.contents .right h4 {
+  width: 577px;
+  height: 40px;
+  font: normal 16px/24px "microsoft yahei";
+  border-bottom: 1px dotted #323232;
+  padding: 0 0 20px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+}
+
+.contents .right .price_message {
+  width: 577px;
+  height: 129.8px;
+  padding: 15px 0 10px 20px;
+  border-bottom: 1px dotted #323232;
+}
+
+.contents .right .price_message p {
+  width: 577px;
+  height: 35.2px;
+  color: #e93b39;
+  font-size: 26px;
+  letter-spacing: 10px;
+}
+
+.contents .right .price_message .supply {
+  line-height: 40px;
+  font-size: 12px;
+  color: #ccc;
+}
+
+.contents .right .price_message .supply span {
+  width: 60.84px;
+  display: inline-block;
+}
+
+.contents .right .price_message .supply i {
+  color: #e93b39;
+  font-style: normal;
+}
+
+.contents .right .shopping_trolley {
+  width: 573px;
+  height: 332.96px;
+  padding: 24px 0 0 24px;
+}
+
+.contents .right .shopping_trolley .color {
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  font-family: simsun;
+}
+
+.contents .right .shopping_trolley .color span {
+  width: 60.84px;
+  text-align: center;
+  display: inline-block;
+}
+
+.contents .right .shopping_trolley .color img {
+  width: 35px;
+  height: 35px;
+}
+
+.contents .right .shopping_trolley .clearfix {
+  width: 577px;
+  height: 24px;
+  font-size: 12px;
+  font-family: simsun;
+  margin-top: 30px;
+}
+
+.contents .right .shopping_trolley .clearfix span {
+  width: 60.84px;
+  height: 24.8px;
+  line-height: 24.8px;
+  text-align: center;
+  display: inline-block;
+  font-family: simsun;
+  margin-bottom: 30px;
+}
+
+.contents .right .shopping_trolley .clearfix #num {
+  width: 510.16px;
+  float: right;
+  margin-bottom: 30px;
+}
+
+.contents .right .shopping_trolley .clearfix #num a {
+  width: 21px;
+  height: 22px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.contents .right .shopping_trolley .clearfix #num input {
+  width: 34px;
+  height: 18px;
+  border: 1px solid #ccc;
+  display: inline-block;
+  text-align: center;
+}
+
+.contents .right .shopping_trolley .purchase {
+  width: 577px;
+  height: 54px;
+  float: right;
+}
+
+.contents .right .shopping_trolley .purchase .purchase_1 {
+  width: 160px;
+  height: 54px;
+  display: inline-block;
+  line-height: 54px;
+  text-align: center;
+  background: #e93b39;
+  font-size: 14px;
+  color: #fff;
+  border: 2px solid #e93b39;
+}
+
+.contents .right .shopping_trolley .purchase .purchase_2 {
+  display: inline-block;
+  width: 160px;
+  height: 54px;
+  line-height: 54px;
+  text-align: center;
+  border: 2px solid #e93b39;
+  color: #e93b39;
+  background: #fff;
+}

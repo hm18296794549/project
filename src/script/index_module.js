@@ -1,9 +1,9 @@
 ;
-//这个是首页渲染的li
+//     //这个是首页渲染的li
 (function($) {
     const $list = $('.list ul');
     $.ajax({
-            url: 'http://192.168.13.56/js2007/projectname/php/jd_jsonp.php',
+            url: 'http://192.168.13.35/js2007/projectname/php/index1.php',
             dataType: 'json'
         })
         .done((data) => {
@@ -28,33 +28,6 @@
             $('.list ul').html($strhtml);
 
 
-
-            // let $liW = $('.list').width();
-            // let index = null;
-            // $('.list ul').width($('.list li').size() / 5 * $liW + 'px');
-
-            // function move() { //右移
-            //     index++;
-            //     if (index === $(".list li").length / 5 + 1) {
-            //         $('.list').css({
-            //             left: 0
-            //         })
-            //         index = 1
-            //     }
-            //     if (index === -1) {
-            //         $('.list').css({
-            //             left: -($('.list li').length - 1) * $liW + 'px'
-            //         })
-            //     }
-            //     $(".list").stop(true).animate({ left: -$liW * index });
-            // };
-            // $('.icon-zuojiantou').click(function() { //点击左箭头
-            //     index -= 2;
-            //     move();
-            // });
-            // $('.icon-iconfontjiantou5').click(function() { //点击右箭头
-            //     move();
-            // });
             const $zuojiantou = $('.icon-zuojiantou'); //左箭头
             const $iconfontjiantou5 = $('.icon-iconfontjiantou5'); //右箭头
             piclen = 5;
@@ -81,7 +54,7 @@
             $zuojiantou.on('click', function() {
                 // let liwidth = 230; //1个li的长度
                 console.log($('.list ul li').size());
-                if (piclen > 0) {
+                if (piclen > 5) {
                     $iconfontjiantou5.css({ //左箭头触发一次，右箭头可以显示。
                         color: '#000'
                     });
@@ -103,7 +76,7 @@
 })(jQuery);
 
 
-//这个是二级导航栏
+// //这个是二级导航栏
 (function($) {
     let $bagli1 = $('.bagli1'); //12个li
 
@@ -151,7 +124,7 @@
 
 
 
-//微信微博移入事件
+// //微信微博移入事件
 (function($) {
     const $icon_weibo = $('.icon-weibo'); //微博
     const $icon_weixin = $('.icon-weixin'); //微信

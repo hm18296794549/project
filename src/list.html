@@ -5,11 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/pagination.css">
+    <link rel="stylesheet" href="./css/list.css">
+
 </head>
 
 <body>
-    <ul></ul>
+    <button>默认排序</button>
+    <button>升序排序↑</button>
+    <button>降序排序↓</button>
+    <!-- 渲染数据的结构 -->
+    <div class="rendererlist">
+        <ul>
+
+        </ul>
+    </div>
+    <!-- 分页的结构 -->
+    <div class="pagelist">
+        <div class="m-style page">
+        </div>
 </body>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<!-- 这是引入jquery -->
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery-cookie/1.0/jquery.cookie.min.js"></script>
+<!-- 引入cookie -->
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery.lazyload/1.8.3/jquery.lazyload.min.js"></script>
+<!-- 引入懒加载 -->
+<script src="./script/pagination.js"></script>
+<!-- 引入分页 -->
+<script src="./script/list_module.js"></script>
 
 </html>

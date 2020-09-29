@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.rendererlist {
+    width: 1160px;
+    margin: 0 auto;
+    font-size: 14px;
+    li {
+        width: 200px;
+        padding: 10px;
+        float: left;
+        margin: 0 10px 10px 0;
+        border: 1px solid #ccc;
+        height: 310px;
+        position: relative;
+    }
+    li p {
+        width: 200px;
+        height: 48px;
+        line-height: 24px;
+        overflow: hidden;
+        color: #000;
+    }
+    li img {
+        width: 200px;
+        height: 200px;
+        display: block;
+    }
+    li span {
+        display: block;
+        color: #000;
+    }
+}
