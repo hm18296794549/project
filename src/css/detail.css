@@ -11,9 +11,61 @@
 }
 
 .contents .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 483px;
   height: 402px;
   float: left;
+  overflow: visible;
+}
+
+.contents .left .sf {
+  width: 400px;
+  height: 400px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  position: relative;
+}
+
+.contents .left .sf img {
+  position: absolute;
+}
+
+.contents .left .sf .a {
+  width: 200px;
+  height: 200px;
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #323232;
+  opacity: 0.2;
+}
+
+.contents .left .bf {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.contents .left .bf img {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.contents .left .bf .picture_dada {
+  position: absolute;
+  width: 500px;
+  height: 500px;
 }
 
 .contents .left .picture_xiao {
@@ -64,7 +116,7 @@
   float: right;
 }
 
-.contents .right h4 {
+.contents .right .h {
   width: 577px;
   height: 40px;
   font: normal 16px/24px "microsoft yahei";
@@ -89,7 +141,12 @@
   border-bottom: 1px dotted #323232;
 }
 
-.contents .right .price_message p {
+.contents .right .price_message .price1 {
+  width: 577px;
+  height: 35.2px;
+}
+
+.contents .right .price_message .price1 p {
   width: 577px;
   height: 35.2px;
   color: #e93b39;

@@ -11,9 +11,51 @@
             padding: 40px 50px 12px 40px;
             //左边的图片
             .left {
+                display: flex;
                 width: 483px;
                 height: 402px;
                 float: left;
+                overflow: visible;
+                .sf {
+                    width: 400px;
+                    height: 400px;
+                    flex-shrink: 0;
+                    position: relative;
+                    img {
+                        position: absolute;
+                    }
+                    .a {
+                        width: 200px;
+                        height: 200px;
+                        visibility: hidden;
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        background: #323232;
+                        opacity: 0.2;
+                    }
+                }
+                .bf {
+                    width: 400px;
+                    height: 400px;
+                    position: relative;
+                    overflow: hidden;
+                    flex-shrink: 0;
+                    img {
+                        width: 400px;
+                        height: 400px;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        overflow: hidden;
+                        visibility: hidden;
+                    }
+                    .picture_dada {
+                        position: absolute;
+                        width: 500px;
+                        height: 500px;
+                    }
+                }
                 .picture_xiao {
                     width: 80px;
                     height: 400px;
@@ -59,7 +101,7 @@
                 width: 597px;
                 height: 705.16px;
                 float: right;
-                h4 {
+                .h {
                     width: 577px;
                     height: 40px;
                     font: normal 16px/24px "microsoft yahei";
@@ -76,12 +118,16 @@
                     height: 129.8px;
                     padding: 15px 0 10px 20px;
                     border-bottom: 1px dotted #323232;
-                    p {
+                    .price1 {
                         width: 577px;
                         height: 35.2px;
-                        color: #e93b39;
-                        font-size: 26px;
-                        letter-spacing: 10px;
+                        p {
+                            width: 577px;
+                            height: 35.2px;
+                            color: #e93b39;
+                            font-size: 26px;
+                            letter-spacing: 10px;
+                        }
                     }
                     //价格
                     .supply {
