@@ -1,5 +1,15 @@
 ;
 (function($) {
+    $('.username').blur(function() {
+        if ($('.username').val() === '') {
+            $('.name').html('用户名不能为空').css('color', 'red')
+        }
+    });
+    $('.password').blur(function() {
+        if ($('.password').val() === '') {
+            $('.mima').html('密码不能为空').css('color', 'red')
+        }
+    });
     $('.btn').on('click', function() {
         $.ajax({
             type: 'post',
