@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    background: #fdf8f4;
+    background: url(https://safeimg.secoo.com/imagesNew/loginPic/login_03.jpg) no-repeat center top;
+}
+
+//头部
+.head {
+    width: 100%;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.8);
+    .header {
+        width: 1200px;
+        height: 100%;
+        // background: rgba(0, 0, 0, 0.8);
+        margin: 0 auto;
+        .left {
+            float: left;
+        }
+        .right {
+            width: 207.94px;
+            height: 70px;
+            float: right;
+            a {
+                color: #666;
+                height: 70px;
+                line-height: 70px;
+                text-decoration: none;
+                font-size: 14px;
+                padding: 0 5px;
+            }
+        }
+    }
+}
+
+//登录页面
+.login_center {
+    width: 1200px;
+    height: 720px;
+    margin: 0 auto;
+    font-family: tahoma, arial, \5b8b\4f53, sans-serif;
+    overflow: hidden;
+    //上半部分，输入密码
+    #cipher {
+        margin: 120px 0 0;
+        padding: 35px 30px;
+        width: 380px;
+        height: 491.6px;
+        background: #fff;
+        float: right;
+        .password {
+            text-align: center;
+            color: #f19108;
+        }
+        .input {
+            input {
+                width: 310px;
+                height: 50px;
+                margin: 14px 5px;
+                display: inline-block;
+            }
+            .radio1 {
+                width: 15px;
+                height: 15px;
+            }
+            .btn {
+                width: 310px;
+                height: 50px;
+                text-align: center;
+                line-height: 50px;
+                background: #f19108;
+                text-decoration: none;
+                display: inline-block;
+                color: #fff;
+                margin-top: 20px;
+            }
+        }
+    }
+    //下半部分
+    .jiathis {
+        width: 310px;
+        height: 90px;
+        margin: 30px 0;
+        .p1 {
+            color: #999;
+            margin-bottom: 15px;
+        }
+        .p2 {
+            vertical-align: text-bottom;
+            img {
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+            }
+        }
+    }
+    .member {
+        width: 310px;
+        height: 15px;
+        span {
+            float: left;
+            i {
+                font-style: normal;
+                color: #f19108;
+            }
+        }
+        b {
+            float: right;
+            font-weight: normal;
+            font-size: 14px;
+        }
+    }
+}

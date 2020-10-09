@@ -1,3 +1,17 @@
+;
+//二级导航栏
+(function($) {
+    let $bagli1 = $('.bagli1'); //12个li
+
+    $bagli1.on('mouseover', function() {
+        $(this).children().show()
+    });
+    $bagli1.on('mouseout', function() {
+        $(this).children().hide()
+    });
+})(jQuery);
+//列表页的渲染
+;
 (function($) {
     //1.渲染列表页的数据-默认渲染第一页
     //排序的变量
@@ -68,7 +82,8 @@
                                 <li>
                                     <a href="detail.html?sid=${value.sid}" target="_blank">
                                         <img src="${value.url}"/>
-                                        <p>${value.title}</p>
+                                        <p class="img_p"><i>自营</i><b>直降</b><p>
+                                        <p >${value.title}</p>
                                         <span class="price">￥${value.price}</span>
                                         <span>${value.sailnumber}</span>
                                     </a>

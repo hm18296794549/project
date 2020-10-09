@@ -4,11 +4,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>我的购物车 - 寺库中国_全球最大奢侈品交流平台</title>
+    <link rel="stylesheet" href="./css/cart.css">
 </head>
 
 <body>
-    这里就是首页
+    <!-- 头部 -->
+    <div class="heard">
+        <div class="trolley">
+            <div class="siku">
+                <a href="./index1.html">
+                    <img src="http://pic.secoo.com/imagesPic/newCartPic/logo.png" alt="">
+                </a>
+            </div>
+            <div class="we">
+                <img src="http://pic.secoo.com/imagesPic/newCartPic/c_05.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- 购物车 -->
+    <div class="shopping_">
+        <!-- 上部分 -->
+        <!-- 列表 -->
+        <div class="commodity">
+            <table cellspacing="0" cellpadding="0">
+                <thead class="sheet">
+                    <tr>
+                        <th style="width: 75px;">
+                            <input name="choseAll" type="checkbox" id="choseAll">
+                            <label for="choseAll">全选</label>
+                        </th>
+                        <th colspan="1" style="width: 355px;">
+                            商品名称
+                        </th>
+                        <th style="width: 96px; ">
+                            发货站
+                        </th>
+                        <th style="width: 96px;">
+                            价格
+                        </th>
+                        <th style="width: 140px;">
+                            数量
+                        </th>
+                        <th style="width: 110px;">
+                            金额小计
+                        </th>
+                        <th style="width: 110px;">
+                            操作
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+            <div class="describe" style="background: #fff;">
+                <ul class="tr1" style="display: none; list-style: none; margin-bottom: 10px; height: 126px; ">
+                    <div style="display: flex;  align-items: center;">
+                        <li style="padding: 30px 0 15px;">
+                            <input type="checkbox">
+                        </li>
+                        <li style="display: flex;margin:  0 52px;">
+                            <span class="car-img" style="width: 97.6px;height: 126px; display: inline-block;text-align: center; ">
+                                <img src="http://pic.secoo.com/product/80/80/2020/0425/de4a3da3298e408a9d9274f932ab1afb.jpg " alt="印象眸/印象眸 足金镶和田玉碧玉白玉水滴形蝴蝶吊坠 附送证书 " width="80 " height="80 ">
+                            </span>
+                            <div style="width: 248.35px;height: 36px;  " class="title">
+                                <p style="font-size:14px;height:43.2px; ">印象眸/印象眸 足金镶和田玉碧玉白玉水滴形蝴蝶吊坠 附送证书</p>
+                                <!-- <p style="font-size:14px;color: #999; ">
+                                    颜色：足金蝴蝶扣+碧玉水滴吊坠+送银渡金项链&nbsp;&nbsp; 尺码：均码&nbsp;&nbsp;
+                                </p> -->
+                            </div>
+                        </li>
+                        <li style="width: 50px;">
+                            中国大陆
+                        </li>
+                        <li id="strong" style="margin: 0 36px;">
+                            <em></em>
+                        </li>
+                        <li style="margin: 0 33px;" id="strong">
+                            <span class="minus ">-</span>
+                            <input type="text " value="1 " style="width: 20px;height: 20px; ">
+                            <span class="add ">+</span>
+                        </li>
+                        <li class="strong " style="margin: 0 20px;">
+                            <em></em>
+                        </li>
+                        <li style="margin :0 44px">删除</li>
+                    </div>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- 下部分 -->
+        <div class="close ">
+            <div class="cartAno ">
+                <div class="ano01 fl " style="float:left; ">
+                    <input type="checkbox">
+                    <label for="choseAll ">全选</label>
+                </div>
+                &nbsp;
+                <div class="ano02 fl delSp "><a href="### ">点击删除选中商品</a></div>
+            </div>
+            <p class="totalprice ">商品数量总计：<em>0</em>件</p>
+            <p class="totalprice ">包装数量总计：<em>0</em>件</p>
+            <p>返利库币：0库币</p>
+            <p class="price ">商品金额总计（不含税金和运费）：0.00</p>
+            <p>
+                <span>继续购物</span>
+                <a href=" ">立即结算</a>
+            </p>
+        </div>
+    </div>
 </body>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js "></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery-cookie/1.0/jquery.cookie.min.js "></script>
+<script src="./script/cart.js "></script>
 
 </html>

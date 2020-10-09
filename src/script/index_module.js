@@ -87,6 +87,7 @@
         $(this).children().hide()
     });
 })(jQuery);
+
 //中英文切换
 (function($) {
     const $zh = $('.logo .zh'); //中文

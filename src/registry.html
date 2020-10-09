@@ -4,11 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>注册页面</title>
+    <link rel="stylesheet" href="./css/registry.css">
 </head>
 
 <body>
-    这里就是首页
+    <!-- 头部 -->
+    <div class="head">
+        <div class="header">
+            <div class="left">
+                <img src="https://safeimg.secoo.com/imagesNew/loginPic/logo.png" width="30" height="70">
+            </div>
+            <div class="right">
+                <a href="./index1.html">寺库首页</a>
+                <a href="javascript;">寺库收藏</a>
+                <a href="http://www.secoo.com/special/sikuApp.shtml">寺库APP</a>
+            </div>
+        </div>
+    </div>
+    <!-- 登录页面 -->
+    <div class="login_center clearfix">
+        <div id="cipher">
+            <form action="http://192.168.13.35/js2007/projectname/src/login.html" method="post">
+                <div class="password">
+                    <p class="name">
+                        用户名
+                        <span>请输入手机号或者邮箱</span>
+                    </p>
+                    <input type="text" class="username">
+                    <br>
+                    <p class="p1">密码</p>
+                    <input type="password" class="password">
+                    <br>
+                    <p class="p1">确认密码</p>
+                    <input type="password" class="password">
+                    <br>
+                    <input type="checkbox" class="checkbox1">贵宾邀请码
+                    <br>
+                    <!-- <a href="./login.html"> -->
+                    <input type="submit" value="立即注册" class="input2">
+                    <!-- </a> -->
+                </div>
+            </form>
+
+            <input type="checkbox">我已阅读并同意《用户注册协议》《隐私政策》《平台服务协议》《消费者告知书》
+        </div>
+    </div>
 </body>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<!-- <script src="https://cdn.bootcdn.net/ajax/libs/jquery-cookie/1.0/jquery.cookie.min.js"></script> -->
+<script src="./script/registry.js"></script>
 
 </html>

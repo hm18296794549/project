@@ -4,19 +4,875 @@
   list-style: none;
 }
 
+.heard {
+  width: 100%;
+  height: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.heard .logo {
+  width: 1200px;
+  height: 130px;
+  margin: 0 auto;
+}
+
+.heard .logo .left {
+  width: 172px;
+  height: 31px;
+  float: left;
+  margin-top: 62px;
+  vertical-align: middle;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.heard .logo .zh {
+  width: 80px;
+  height: 31px;
+  border-right: 1px solid #ccc;
+  position: relative;
+}
+
+.heard .logo .zh h4 {
+  width: 40px;
+  height: 28px;
+  line-height: 28px;
+  font-weight: normal;
+  font-size: 14px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 24px;
+}
+
+.heard .logo .zh h4 .iconfont {
+  font-size: 12px;
+}
+
+.heard .logo .zh .en {
+  width: 79px;
+  height: 63px;
+  border: 1px solid #000;
+  position: absolute;
+  left: 0;
+  display: none;
+  background: #fff;
+  z-index: 10;
+}
+
+.heard .logo .zh .en h4 {
+  width: 79px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: normal;
+  padding-left: 0;
+}
+
+.heard .logo .rmb {
+  width: 80px;
+  height: 31px;
+}
+
+.heard .logo .rmb h4 {
+  width: 40px;
+  height: 28px;
+  line-height: 28px;
+  font-weight: normal;
+  padding-left: 9px;
+  font-size: 14px;
+  font-family: 'INTERVOGUE-REG' 'Microsoft YaHei';
+}
+
+.heard img {
+  display: inline-block;
+  text-align: center;
+  padding-top: 29px;
+  position: absolute;
+  left: 616px;
+}
+
+.heard .right {
+  width: 156.56px;
+  height: 28px;
+  float: right;
+  margin-top: 62px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.heard .right .registers {
+  width: 63px;
+  height: 28px;
+  float: right;
+  line-height: 22px;
+  border-right: 1px solid #ccc;
+}
+
+.heard .right .registers a {
+  width: 63px;
+  height: 28px;
+  line-height: 28px;
+  text-decoration: none;
+  color: #000;
+  font-size: 12px;
+  padding-left: 13px;
+}
+
+.heard .right .register {
+  width: 63px;
+  height: 28px;
+  float: right;
+  line-height: 22px;
+  border-right: 1px solid #ccc;
+}
+
+.heard .right .register a {
+  width: 63px;
+  height: 28px;
+  line-height: 28px;
+  text-decoration: none;
+  color: #000;
+  font-size: 12px;
+  padding-left: 13px;
+}
+
+.heard .right .iconfont {
+  height: 28px;
+  line-height: 28px;
+  font-size: 20px;
+}
+
+.nav_top {
+  width: 100%;
+  height: 50px;
+  background: #000;
+  position: relative;
+}
+
+.nav_top .List {
+  width: 1200px;
+  margin: 0 auto;
+  background: #000;
+  color: #ffb81c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  list-style: none;
+  position: relative;
+}
+
+.nav_top .List .bagli1 {
+  list-style: none;
+  width: 60px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  padding: 0 7px;
+  float: left;
+  position: relative;
+}
+
+.nav_top .List .search {
+  position: absolute;
+  right: 0;
+  display: block;
+}
+
+.nav_top .List .search .icon-fangdajing {
+  color: #ffb81c;
+  position: absolute;
+  top: 0px;
+  right: 0;
+}
+
+.nav_top .List .search_input {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav_top .List .search_input .input {
+  width: 197px;
+  height: 40px;
+  border: none;
+  background: #000;
+  border-bottom: 1px solid #fff;
+}
+
+.nav_top .List .search_input .iconfont {
+  color: #fff;
+}
+
+.nav_top .secondary_menu {
+  width: 1200px;
+  height: 400px;
+  background: #fff;
+  position: absolute;
+  left: -74px;
+  z-index: 10;
+  display: none;
+}
+
+.nav_top .secondary_menu .bagli1_1 {
+  list-style: none;
+  float: left;
+  width: 400px;
+  height: 400px;
+}
+
+.nav_top .secondary_menu .bagli1_1 h4 {
+  color: #000;
+  width: 400px;
+}
+
+.nav_top .secondary_menu .bagli1_1 p {
+  width: 200px;
+  height: 300px;
+  float: left;
+}
+
+.nav_top .secondary_menu .bagli1_1 p a {
+  width: 200px;
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav_top .secondary_menu .bagli1_2 {
+  float: left;
+  list-style: none;
+  height: 400px;
+  width: 600px;
+  float: left;
+}
+
+.nav_top .secondary_menu .bagli1_2 h4 {
+  color: #000;
+  width: 400px;
+}
+
+.nav_top .secondary_menu .bagli1_2 p {
+  width: 150px;
+  height: 300px;
+  float: left;
+}
+
+.nav_top .secondary_menu .bagli1_2 p a {
+  width: 200px;
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav_top .wristwatch {
+  width: 1200px;
+  height: 400px;
+  background: #fff;
+  position: absolute;
+  left: -148px;
+  list-style: none;
+  z-index: 10;
+  display: none;
+}
+
+.nav_top .wristwatch .wristwatch_1 {
+  float: left;
+  list-style: none;
+  height: 400px;
+  width: 600px;
+  float: left;
+}
+
+.nav_top .wristwatch .wristwatch_1 h4 {
+  color: #000;
+  width: 400px;
+}
+
+.nav_top .wristwatch .wristwatch_1 p {
+  width: 200px;
+  height: 300px;
+  float: left;
+}
+
+.nav_top .wristwatch .wristwatch_1 p a {
+  width: 200px;
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav_top .wristwatch .wristwatch_2 {
+  float: left;
+  list-style: none;
+  height: 400px;
+  width: 600px;
+  float: left;
+}
+
+.nav_top .wristwatch .wristwatch_2 h4 {
+  color: #000;
+  width: 400px;
+}
+
+.nav_top .wristwatch .wristwatch_2 p {
+  width: 200px;
+  height: 300px;
+  float: left;
+}
+
+.nav_top .wristwatch .wristwatch_2 p a {
+  width: 200px;
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav_top .jewelry {
+  width: 1200px;
+  height: 400px;
+  background: #fff;
+  position: absolute;
+  left: -222px;
+  list-style: none;
+  z-index: 10;
+  display: none;
+}
+
+.nav_top .jewelry .jewelry_1 {
+  float: left;
+  list-style: none;
+  height: 400px;
+  width: 600px;
+  float: left;
+}
+
+.nav_top .jewelry .jewelry_1 h4 {
+  color: #000;
+  width: 400px;
+}
+
+.nav_top .jewelry .jewelry_1 p {
+  width: 200px;
+  height: 300px;
+  float: left;
+}
+
+.nav_top .jewelry .jewelry_1 p a {
+  width: 200px;
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav_top .jewelry .jewelry_2 {
+  float: left;
+  list-style: none;
+  height: 400px;
+  width: 600px;
+  float: left;
+}
+
+.nav_top .jewelry .jewelry_2 h4 {
+  color: #000;
+  width: 400px;
+}
+
+.nav_top .jewelry .jewelry_2 p {
+  width: 200px;
+  height: 300px;
+  float: left;
+}
+
+.nav_top .jewelry .jewelry_2 p a {
+  width: 200px;
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav_top .costume {
+  width: 1200px;
+  height: 400px;
+  background: #fff;
+  position: absolute;
+  left: -296px;
+  list-style: none;
+  z-index: 10;
+  display: none;
+}
+
+.nav_top .costume .costume_1 {
+  float: left;
+  list-style: none;
+  height: 400px;
+  width: 600px;
+  float: left;
+}
+
+.nav_top .costume .costume_1 h4 {
+  color: #000;
+  width: 400px;
+}
+
+.nav_top .costume .costume_1 p {
+  width: 200px;
+  height: 300px;
+  float: left;
+}
+
+.nav_top .costume .costume_1 p a {
+  width: 200px;
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav_top .costume .costume_2 {
+  float: left;
+  list-style: none;
+  height: 400px;
+  width: 600px;
+  float: left;
+}
+
+.nav_top .costume .costume_2 h4 {
+  color: #000;
+  width: 400px;
+}
+
+.nav_top .costume .costume_2 p {
+  width: 200px;
+  height: 300px;
+  float: left;
+}
+
+.nav_top .costume .costume_2 p a {
+  width: 200px;
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav_top .shoes {
+  width: 1200px;
+  height: 400px;
+  background: #fff;
+  position: absolute;
+  left: -370px;
+  list-style: none;
+  z-index: 10;
+  display: none;
+}
+
+.nav_top .shoes .shoes_1 {
+  float: left;
+  list-style: none;
+  height: 400px;
+  width: 600px;
+  float: left;
+}
+
+.nav_top .shoes .shoes_1 h4 {
+  color: #000;
+  width: 400px;
+}
+
+.nav_top .shoes .shoes_1 p {
+  width: 200px;
+  height: 300px;
+  float: left;
+}
+
+.nav_top .shoes .shoes_1 p a {
+  width: 200px;
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav_top .shoes .shoes_2 {
+  float: left;
+  list-style: none;
+  height: 400px;
+  width: 600px;
+  float: left;
+}
+
+.nav_top .shoes .shoes_2 h4 {
+  color: #000;
+  width: 400px;
+}
+
+.nav_top .shoes .shoes_2 p {
+  width: 200px;
+  height: 300px;
+  float: left;
+}
+
+.nav_top .shoes .shoes_2 p a {
+  width: 200px;
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav_top .accessory {
+  width: 1200px;
+  height: 400px;
+  background: #fff;
+  position: absolute;
+  left: -444px;
+  list-style: none;
+  z-index: 10;
+  display: none;
+}
+
+.nav_top .accessory .accessory_1 {
+  float: left;
+  list-style: none;
+  height: 400px;
+  width: 600px;
+  float: left;
+}
+
+.nav_top .accessory .accessory_1 h4 {
+  color: #000;
+  width: 400px;
+}
+
+.nav_top .accessory .accessory_1 p {
+  width: 200px;
+  height: 300px;
+  float: left;
+}
+
+.nav_top .accessory .accessory_1 p a {
+  width: 200px;
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav_top .accessory .accessory_2 {
+  float: left;
+  list-style: none;
+  height: 400px;
+  width: 600px;
+  float: left;
+}
+
+.nav_top .accessory .accessory_2 h4 {
+  color: #000;
+  width: 400px;
+}
+
+.nav_top .accessory .accessory_2 p {
+  width: 200px;
+  height: 300px;
+  float: left;
+}
+
+.nav_top .accessory .accessory_2 p a {
+  width: 200px;
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav_top .exercise {
+  width: 1200px;
+  height: 400px;
+  background: #fff;
+  position: absolute;
+  left: -518px;
+  color: #fff;
+  list-style: none;
+  z-index: 10;
+  display: none;
+}
+
+.nav_top .exercise .exercise_1 {
+  float: left;
+  list-style: none;
+  height: 400px;
+  width: 600px;
+  float: left;
+}
+
+.nav_top .exercise .exercise_1 h4 {
+  color: #000;
+  width: 400px;
+}
+
+.nav_top .exercise .exercise_1 p {
+  width: 200px;
+  height: 300px;
+  float: left;
+}
+
+.nav_top .exercise .exercise_1 p a {
+  width: 200px;
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav_top .exercise .exercise_2 {
+  float: left;
+  list-style: none;
+  height: 400px;
+  width: 600px;
+  float: left;
+}
+
+.nav_top .exercise .exercise_2 h4 {
+  color: #000;
+  width: 400px;
+}
+
+.nav_top .exercise .exercise_2 p {
+  width: 200px;
+  height: 300px;
+  float: left;
+}
+
+.nav_top .exercise .exercise_2 p a {
+  width: 200px;
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav_top .furniture {
+  width: 1200px;
+  height: 400px;
+  background: #fff;
+  position: absolute;
+  left: -592px;
+  list-style: none;
+  z-index: 10;
+  display: none;
+}
+
+.nav_top .furniture .furniture_1 {
+  float: left;
+  list-style: none;
+  height: 400px;
+  width: 600px;
+  float: left;
+}
+
+.nav_top .furniture .furniture_1 h4 {
+  color: #000;
+  width: 400px;
+}
+
+.nav_top .furniture .furniture_1 p {
+  width: 200px;
+  height: 300px;
+  float: left;
+}
+
+.nav_top .furniture .furniture_1 p a {
+  width: 200px;
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav_top .furniture .furniture_2 {
+  float: left;
+  list-style: none;
+  height: 400px;
+  width: 600px;
+  float: left;
+}
+
+.nav_top .furniture .furniture_2 h4 {
+  color: #000;
+  width: 400px;
+}
+
+.nav_top .furniture .furniture_2 p {
+  width: 200px;
+  height: 300px;
+  float: left;
+}
+
+.nav_top .furniture .furniture_2 p a {
+  width: 200px;
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav_top .beauty {
+  width: 1200px;
+  height: 400px;
+  background: #fff;
+  position: absolute;
+  left: -666px;
+  list-style: none;
+  z-index: 10;
+  display: none;
+}
+
+.nav_top .beauty .beauty_1 {
+  float: left;
+  list-style: none;
+  height: 400px;
+  width: 600px;
+  float: left;
+}
+
+.nav_top .beauty .beauty_1 h4 {
+  color: #000;
+  width: 400px;
+}
+
+.nav_top .beauty .beauty_1 p {
+  width: 200px;
+  height: 300px;
+  float: left;
+}
+
+.nav_top .beauty .beauty_1 p a {
+  width: 200px;
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav_top .beauty .beauty_2 {
+  float: left;
+  list-style: none;
+  height: 400px;
+  width: 600px;
+  float: left;
+}
+
+.nav_top .beauty .beauty_2 h4 {
+  color: #000;
+  width: 400px;
+}
+
+.nav_top .beauty .beauty_2 p {
+  width: 200px;
+  height: 300px;
+  float: left;
+}
+
+.nav_top .beauty .beauty_2 p a {
+  width: 200px;
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav_top .life_style {
+  width: 1200px;
+  height: 400px;
+  position: absolute;
+  left: -740px;
+  background: #fff;
+  list-style: none;
+  z-index: 10;
+  display: none;
+}
+
+.nav_top .life_style .life_style_1 {
+  float: left;
+  list-style: none;
+  height: 400px;
+  width: 600px;
+  float: left;
+}
+
+.nav_top .life_style .life_style_1 h4 {
+  color: #000;
+  width: 400px;
+}
+
+.nav_top .life_style .life_style_1 p {
+  width: 200px;
+  height: 300px;
+  float: left;
+}
+
+.nav_top .life_style .life_style_1 p a {
+  width: 200px;
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav_top .life_style .life_style_2 {
+  float: left;
+  list-style: none;
+  height: 400px;
+  width: 600px;
+  float: left;
+}
+
+.nav_top .life_style .life_style_2 h4 {
+  color: #000;
+  width: 400px;
+}
+
+.nav_top .life_style .life_style_2 p {
+  width: 200px;
+  height: 300px;
+  float: left;
+}
+
+.nav_top .life_style .life_style_2 p a {
+  width: 200px;
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+}
+
 .rendererlist {
-  width: 1160px;
+  width: 1200px;
   margin: 0 auto;
   font-size: 14px;
 }
 
 .rendererlist li {
-  width: 200px;
-  padding: 10px;
+  width: 238px;
+  padding: 1px;
   float: left;
-  margin: 0 10px 10px 0;
-  border: 1px solid #ccc;
-  height: 310px;
+  border: none;
+  height: 358px;
   position: relative;
 }
 
@@ -34,7 +890,26 @@
   display: block;
 }
 
+.rendererlist .img_p {
+  height: 16px;
+}
+
+.rendererlist i {
+  font-style: normal;
+  color: red;
+}
+
+.rendererlist b {
+  font-weight: 500px;
+  color: #000;
+}
+
 .rendererlist li span {
   display: block;
   color: #000;
+  text-align: left;
+}
+
+.rendererlist .price {
+  text-align: left;
 }
